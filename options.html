@@ -1,0 +1,385 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NFC虚假评论检测助手自定义设置</title>
+    <link rel="stylesheet" href="css/options.css" type="text/css"/>
+</head>
+<body>
+    <div id="header">
+        <div class="boxwrap">
+            <h1 class="logo">
+                <a href="#" target="_blank">
+                	<img src="img/icon.png">
+                NFC虚假评论检测</a>
+                
+                <span>自定义设置</span>
+            </h1>
+            <p class="desp"></p>
+        </div>
+    </div>
+    <div id="options">
+        <div class="hd" id="commentPreRead">
+            <div class="title">
+                <h3>是否打开评论预读功能？（<a href="#q_a">说明</a>）</h3>
+            </div>
+        </div>
+        <div class="bd">            
+            <ul>
+               <li>               
+                   <div class="left">
+                       <h4 style="color: #f22e00;"><i>•</i>淘宝：</h4>
+                   </div>                   
+                   <div class="right">
+                       <label class="btn-cur-out">
+                          <input type="radio" name="taobao" value="1" checked>
+                              <span class="btn-cur">
+                                  <span class="open">预读评论</span>
+                                  <span class="close">预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>                                      
+                       <label class="btn-cur-out">
+                          <input type="radio" name="taobao" value="2">
+                              <span class="btn-cur">
+                                  <span class="open">不预读评论</span>
+                                  <span class="close">不预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>
+                       
+                       <span class="hint">提示：打开淘宝评论预读功能可能会要求登录或输入验证码，参见下面的<a href="#q_a">常见问题</a>。</span>
+                  </div>
+               </li>
+               <li>               
+                   <div class="left">
+                       <h4 style="color: #ff0036;"><i>•</i>天猫：</h4>
+                   </div>                   
+                   <div class="right">
+                       <label class="btn-cur-out">
+                          <input type="radio" name="tmall" value="1" checked>
+                              <span class="btn-cur">
+                                  <span class="open">预读评论</span>
+                                  <span class="close">预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>                                      
+                       <label class="btn-cur-out">
+                          <input type="radio" name="tmall" value="2">
+                              <span class="btn-cur">
+                                  <span class="open">不预读评论</span>
+                                  <span class="close">不预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>
+                  </div>
+               </li>              
+               <li>               
+                   <div class="left">
+                       <h4 style="color: #f10215;"><i>•</i>京东：</h4>
+                   </div>                   
+                   <div class="right">
+                       <label class="btn-cur-out">
+                          <input type="radio" name="jd" value="1" checked>
+                              <span class="btn-cur">
+                                  <span class="open">预读评论</span>
+                                  <span class="close">预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>                                      
+                       <label class="btn-cur-out">
+                          <input type="radio" name="jd" value="2">
+                              <span class="btn-cur">
+                                  <span class="open">不预读评论</span>
+                                  <span class="close">不预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>
+                  </div>
+               </li>              
+               <li>               
+                   <div class="left">
+                       <h4 style="color: #ff4040;"><i>•</i>1号店：</h4>
+                   </div>                   
+                   <div class="right">
+                       <label class="btn-cur-out">
+                          <input type="radio" name="No1" value="1" checked>
+                              <span class="btn-cur">
+                                  <span class="open">预读评论</span>
+                                  <span class="close">预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>                                      
+                       <label class="btn-cur-out">
+                          <input type="radio" name="No1" value="2">
+                              <span class="btn-cur">
+                                  <span class="open">不预读评论</span>
+                                  <span class="close">不预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>
+                  </div>
+              </li>
+              <li>               
+                   <div class="left">
+                       <h4 style="color: #ff2832;"><i>•</i>当当：</h4>
+                   </div>                   
+                   <div class="right">
+                       <label class="btn-cur-out">
+                          <input type="radio" name="dd" value="1" checked>
+                              <span class="btn-cur">
+                                  <span class="open">预读评论</span>
+                                  <span class="close">预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>                                      
+                       <label class="btn-cur-out">
+                          <input type="radio" name="dd" value="2">
+                              <span class="btn-cur">
+                                  <span class="open">不预读评论</span>
+                                  <span class="close">不预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>
+                  </div>
+               </li>
+              <li>               
+                   <div class="left">
+                       <h4 style="color: #000;"><i>•</i>亚马逊：</h4>
+                   </div>                   
+                   <div class="right">
+                       <label class="btn-cur-out">
+                          <input type="radio" name="amazon" value="1" checked>
+                              <span class="btn-cur">
+                                  <span class="open">预读评论</span>
+                                  <span class="close">预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>                                      
+                       <label class="btn-cur-out">
+                          <input type="radio" name="amazon" value="2">
+                              <span class="btn-cur">
+                                  <span class="open">不预读评论</span>
+                                  <span class="close">不预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>
+                  </div>
+              </li>               
+              <li>               
+                   <div class="left">
+                       <h4 style="color: #dd00a7;"><i>•</i>国美：</h4>
+                   </div>                   
+                   <div class="right">
+                       <label class="btn-cur-out">
+                          <input type="radio" name="gome" value="1" checked>
+                              <span class="btn-cur">
+                                  <span class="open">预读评论</span>
+                                  <span class="close">预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>                                      
+                       <label class="btn-cur-out">
+                          <input type="radio" name="gome" value="2">
+                              <span class="btn-cur">
+                                  <span class="open">不预读评论</span>
+                                  <span class="close">不预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>
+                  </div>
+              </li>
+              <li>               
+                   <div class="left">
+                       <h4 style="color: #f90;"><i>•</i>苏宁：</h4>
+                   </div>                   
+                   <div class="right">
+                       <label class="btn-cur-out">
+                          <input type="radio" name="suning" value="1" checked>
+                              <span class="btn-cur">
+                                  <span class="open">预读评论</span>
+                                  <span class="close">预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>                                      
+                       <label class="btn-cur-out">
+                          <input type="radio" name="suning" value="2">
+                              <span class="btn-cur">
+                                  <span class="open">不预读评论</span>
+                                  <span class="close">不预读评论</span>
+                                  <i></i>
+                              </span>
+                       </label>
+                  </div>
+               </li>               
+          </ul>
+       </div>
+    </div>
+    
+    <div id="QA">
+       
+       <div class="title">
+       
+           <h3 id="q_a">常见问题：</h3>        
+       
+       </div>
+       
+       <div class="content">
+       
+           <ol>
+           
+              <li>
+              
+                  <div class="question">什么叫“评论预读”？
+                  
+                  </div>
+                  
+                  <div class="answer">
+                  所谓的“评论预读”，是指您打开商品页面之后，这个插件自动地把商品的买家评论读出来，然后自动地找出其中的真实买家评论。
+                  </div>
+              
+              </li>
+              
+              <li>
+              
+                  <div class="question">"评论预读"有什么用？
+                  
+                  </div>
+                  
+                  <div class="answer">
+                  <p>评论预读的作用：</p>
+                  <p>1）阅读评论更方便。不需要您动手，这个插件就会自动把评论内容读出来，然后把真实买家评论筛选出来，这样您就不需要一页一页地翻评论区的评论了，可以帮您节省时间。</p>
+                  <p>2）可以更准确地识别刷单评论。例如第一页的某条评论抄了第三页的另外一条评论，通过评论预读就能很快识别出来。如果关闭了这个功能，这个插件就只能分析您打开的评论页面，直到您从第一页翻到第三页，它才会发现这个有问题的评论。</p>
+                  </div>
+              
+              </li>
+              
+              <li>
+              
+                  <div class="question">如果关闭了“评论预读”功能，这个插件是不是就不能分析买家评论了？
+                  
+                  </div>
+                  
+                  <div class="answer">
+                  
+                  <p>不是，没有评论预读功能，这个插件照样可以识别真实买家评论和可疑的评论，只不过，这时需要您自己打开评论区，在您打开评论页面后，它就会自动把这个页面上的所有评论分析完，并给您相应的提示。您翻到第几页，它就分析到第几页，找到的真实买家评论照样会收集到真实买家评论区中，供您浏览。</p>
+                  
+                  <p>简单地说，有这个功能更好，没有也无所谓。</p>
+                  
+                  </div>
+              
+              </li>              
+              
+              <li>
+              
+                  <div class="question">什么情况下需要关闭“评论预读”功能？
+                  
+                  </div>
+                  
+                  <div class="answer">
+                  
+                  有的电商网站（例如淘宝）为了减少对服务器的压力，会限制用户通过技术手段频繁读取评论数据。如果使用预读功能，在浏览了若干个商品之后，网站就会要求用户登录或者输入验证码，才能继续浏览评论数据。如果每翻一页评论都需要输入一次验证码，岂不是很麻烦？所以，对于淘宝这样的限制比较多的网站，我们默认是不开启评论预读功能的。当然，如果您每次浏览的商品不多，或者您觉得输入验证码也无所谓，也可以手动开启淘宝的评论预读功能，点击上面的开关即可。
+                  
+                  </div>
+              
+              </li>              
+              
+              <li>
+              
+                  <div class="question">如果打开了评论预读功能，在淘宝，浏览多少个商品就会被限制？
+                  
+                  </div>
+                  
+                  <div class="answer">
+                  
+                  不好说，有时候多一些，有时候少一些。一般来说，如果一次只浏览4、5个商品，是不会受到限制的。其实，就算受到限制，也就是让你登录，输验证码，只要你浏览的商品不多，也不是很麻烦。
+                  
+                  </div>
+              
+              </li>                            
+              
+              <li>
+              
+                  <div class="question">如果因为打开评论预读功能受到淘宝的限制了，是不是以后每次看评论都需要输入验证码？
+                  
+                  </div>
+                  
+                  <div class="answer">
+                  
+                  不是，这个限制通常只会持续几分钟，过几分钟以后再来就不会有这个限制了。还有，如果您已经输入了好几次验证码，淘宝确认您是真实的用户而不是机器时，限制也会取消的。
+                  
+                  </div>
+              
+              </li>                            
+              
+              <li>
+              
+                  <div class="question">除开淘宝，还有哪些网站会限制评论预读呢？为什么会有这个限制？
+                  
+                  </div>
+                  
+                  <div class="answer">
+                  
+                  <p>现在主要是淘宝有这个限制。如果打开的商品很多的话，其他网站估计也会有类似的限制。</p>
+                  
+                  <p>评论预读需要读若干页评论数据，相当于每查看一个商品就要多读几页评论，这样的话，会增加电商网站的压力，所以，电商会做出这样的限制。</p>
+                  
+                  </div>
+              
+              </li>                                          
+              
+              <li id="goldenShopIntro">
+              
+                  <div class="question">什么是放心店铺和特色网店？
+                  
+                  </div>
+                  
+                  <div class="answer">
+                  
+                  <p>这里所说的放心店铺是指各项数据都特别好的金牌卖家。更详细的介绍参见<a href="http://www.xuanyouwang.com/help.php?aid=13&zid=182" target="_blank">“什么是放心店铺？”</a></p>
+                  
+                  <p>这里的“特色网店”是指选优网人工挑选和推荐的金牌卖家，这类店铺不但各项指标出色，而且具有一定的特色。</p>
+                  
+                  </div>
+              
+              </li>                                                        
+              
+              <li id="goldenShopIntro">
+              
+                  <div class="question">如果把网店类型设置为“放心店铺”，把排序方式设置为“相关性”，为什么会看到一些好评率不太高的网店？
+                  
+                  </div>
+                  
+                  <div class="answer">                  
+                  
+                  <p>由于受到技术限制，在使用“相关性”排序时，搜索放心店铺和特色网店不太准确，会出现一些不属于该类型的金牌卖家。如果使用其他排序方式，不会出现这种现象。</p>
+                  
+                  </div>
+              
+              </li>                                                                      
+              
+              <li id="goldenShopIntro">
+              
+                  <div class="question">为什么这里推荐的金牌卖家不太准，有的网店明明不是金牌卖家，这里也推荐了？
+                  
+                  </div>
+                  
+                  <div class="answer">                  
+                  
+                  <p>因为我们的数据和淘宝并不是完全同步的，有一定的时间误差，所以，虽然有的网店已经不是金牌卖家了，我们这里还是把它当作金牌卖家推荐。只要在这里推荐了，就说明最近这两个月该网店曾经是金牌卖家。</p>
+                  
+                  </div>
+              
+              </li>                                                                                    
+                                       
+           </ol>
+       
+       </div>
+    
+    </div>    
+    
+    <script type="text/javascript" src='lib/jquery-3.0.0.min.js'></script>
+    <script type="text/javascript" charset="utf-8" src="js/common.js"></script>
+    <script type="text/javascript" charset="utf-8" src="js/options.js"></script>
+</body>
+</html>
