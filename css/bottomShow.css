@@ -1,0 +1,1030 @@
+.nfc_footbar {
+    opacity: 1;
+    display: block;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 44px;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    font-family: SimSun;
+    z-index: 2147483647;
+    background-repeat: repeat-x;
+}
+
+.nfc_footbar * {
+    box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box;
+}
+
+.nfc_footbar input:not([type=hidden])+input {
+    margin-left: 0;
+    box-sizing: border-box;
+}
+
+.nfc_left {
+    float: left;
+    height: 44px;
+    font-size: 12px;
+}
+
+.nfc_right {
+    width: 10px;
+    height: 44px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.nfc_left ul {
+    display: inline-block;
+    float: left;
+    margin: 0;
+}
+
+.nfc_left li {
+    float: left;
+    text-align: center;
+    line-height: 44px;
+    position: relative;
+    color: #000;
+}
+
+.nfc_citem {
+    position: relative;
+    height: 44px;
+    line-height: 44px;
+    float: left;
+    display: inline-block;
+    cursor: pointer;
+    color: #000;
+}
+
+.nfc_left .nfc_item {
+    position: relative;
+    height: 44px;
+    float: left;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nfc_left ul li {
+    list-style: none;
+}
+
+.nfc_searchOrder {
+    float: left;
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+}
+
+.nfc_search {
+    float: left;
+    display: inline-block;
+    width: 306px;
+}
+
+.nfc_search form {
+    float: left;
+    height: 44px;
+    width: 100%;
+}
+
+.nfc_keyword,.nfc_footbar input[type=text] {
+    box-sizing: border-box;
+    width: 62px;
+    height: 30px;
+    line-height: 30px;
+    border: solid 1px #CCC;
+    border-right: 0;
+    font-size: 12px;
+    color: #cbcbcb;
+    float: left;
+    margin-right: 10px;
+    position: relative;
+    top: 7px;
+    padding: 5px;
+    display: inline-block;
+}
+
+.nfc_searchbtn {
+    cursor: pointer;
+    background-position: -330px -9px;
+    width: 31px;
+    height: 30px;
+    top: 8px;
+    float: left;
+}
+
+#nfc_min {
+    background-position: -520px -13px;
+    width: 10px;
+    height: 23px;
+    top: 15px;
+    cursor: pointer;
+}
+
+#nfc_max {
+    background-position: -606px -2px;
+    width: 10px;
+    height: 44px;
+    top: 0;
+    cursor: pointer;
+    display: none;
+}
+
+#nfc_logo {
+    background-position: -3px -2px;
+    width: 44px;
+    height: 44px;
+    float: left;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+#nfc_config i {
+    background-position: -79px -14px;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    margin-right: 10px;
+}
+
+#nfc_share i {
+    background-position: -124px -14px;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    margin-right: 10px;
+}
+
+#nfc_suggest i {
+    background-position: -571px -79px;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    margin-right: 10px;
+}
+
+#nfc_comments i {
+    background-position: -177px -16px;
+    width: 20px;
+    height: 20px;
+    top: 5px;
+    margin-right: 10px;
+}
+
+#nfc_recommend i {
+    background-position: -426px -18px;
+    width: 16px;
+    height: 14px;
+    top: 5px;
+    margin-right: 10px;
+}
+
+#nfc_recomShop i {
+    background-position: -426px -18px;
+    width: 16px;
+    height: 14px;
+    top: 5px;
+    margin-right: 10px;
+}
+
+#nfc_bestShop i {
+    background-position: -426px -18px;
+    width: 16px;
+    height: 14px;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.nfc_searchOrder i {
+    background-position: -563px -19px;
+    width: 14px;
+    height: 15px;
+    top: 5px;
+    margin-right: 10px;
+}
+
+#nfc_cheap i {
+    background-position: -468px -14px;
+    width: 20px;
+    height: 17px;
+    top: 5px;
+    margin-right: 10px;
+}
+
+#nfc_qzoneShare i {
+    background-position: -124px -72px;
+    width: 32px;
+    height: 32px;
+}
+
+#nfc_weiboShare i {
+    background-position: -183px -72px;
+    width: 32px;
+    height: 32px;
+}
+
+#nfc_doubanShare i {
+    background-position: -247px -72px;
+    width: 32px;
+    height: 32px;
+}
+
+#nfc_qqShare i {
+    background-position: -67px -72px;
+    width: 32px;
+    height: 32px;
+}
+
+.nfc_youyouagree {
+    background-position: -322px -70px;
+    width: 47px;
+    height: 37px;
+}
+
+.nfc_youyoudisagree {
+    background-position: -413px -68px;
+    width: 43px;
+    height: 42px;
+}
+
+.nfc_youyoudoubt {
+    background-position: -513px -72px;
+    width: 25px;
+    height: 40px;
+}
+
+#nfc_share {
+    position: relative;
+}
+
+#nfc_share .nfc_shareItem {
+    float: left;
+    height: 60px;
+    width: 50px;
+    text-align: center;
+}
+
+#nfc_share .nfc_shareItem i {
+    display: block;
+    width: 32px;
+    margin-left: 9px;
+}
+
+#nfc_share .nfc_shareItem span {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+#nfc_share .nfc_arrowCover {
+    margin-left: 20px;
+}
+
+#nfc_sharePart {
+    padding: 10px;
+    background-color: #fff;
+    display: none;
+    border-top: 5px solid #ff614c;
+    border-bottom: 0;
+    position: absolute;
+    bottom: 44px;
+    font-family: SimSun;
+    box-shadow: 0 4px 20px 1px #888;
+    height: 50px;
+    margin-left: -67px;
+    width: 200px;
+    height: 60px;
+}
+
+.nfc_img {
+    display: inline-block;
+    position: relative;
+    border-style: none;
+}
+
+#nfc_price .nfc_priceDown {
+    background-position: -215px -22px;
+    width: 20px;
+    height: 12px;
+    top: 5px;
+    margin-right: 10px;
+}
+
+#nfc_price .nfc_priceLevel {
+    background-position: -259px -22px;
+    width: 20px;
+    height: 8px;
+    top: 0;
+    margin-right: 10px;
+}
+
+#nfc_price .nfc_priceUp {
+    background-position: -293px -18px;
+    width: 20px;
+    height: 12px;
+    top: 5px;
+    margin-right: 10px;
+}
+
+.nfc_split {
+    background-position: -390px -16px;
+    width: 1px;
+    height: 23px;
+    float: left;
+    margin: 10px;
+}
+
+.nfc_arrowCover {
+    height: 10px;
+    width: 40px;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 34px;
+    display: none;
+}
+
+.nfc_downArrow {
+    box-shadow: rgba(0,0,0,0.298039) 0 0 10px;
+    -webkit-transform: rotate(45deg);
+    background: none 0 0 repeat scroll #fff;
+    height: 40px;
+    position: absolute;
+    left: 0;
+    width: 40px;
+    bottom: 10px;
+}
+
+#nfc_comContent {
+    padding-bottom: 40px;
+    background-color: #fff;
+    margin-left: -239px;
+    border-top: 5px solid #ff614c;
+    width: 820px;
+    min-height: 80px;
+    max-height: 520px;
+    position: absolute;
+    bottom: 44px;
+    font-family: SimSun;
+    box-shadow: 0 4px 20px 1px #888;
+    display: none;
+    overflow: hidden;
+}
+
+#nfc_comHeader {
+    width: 100%;
+    height: 40px;
+    background-color: #f0f0f0;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 0 15px;
+}
+
+#nfc_productGrade {
+    float: left;
+    color: red;
+    font-size: 12px;
+}
+
+#nfc_comments .nfc_arrowCover {
+    margin-left: 40px;
+}
+
+#nfc_comHeader .nfc_comHint {
+    float: right;
+    color: green;
+    font-size: 12px;
+    margin-right: 15px;
+}
+
+#nfc_comContent .nfc_comDetails {
+    float: left;
+    width: 100%;
+    min-height: 30px;
+    max-height: 440px;
+    background-color: #FFF;
+    line-height: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    text-align: left;
+    cursor: default;
+}
+
+#nfc_comContent .nfc_comDetails p {
+    text-indent: 24px;
+    margin-bottom: 12px;
+}
+
+#nfc_comTags {
+    position: absolute;
+    bottom: 0;
+    left: 15px;
+    right: 15px;
+    height: 30px;
+    background-color: #FFF;
+    border-top: solid 1px #CCC;
+    padding-top: 10px;
+}
+
+#nfc_comTags .nfc_comTag {
+    cursor: pointer;
+    text-align: center;
+    line-height: 20px;
+    height: 20px;
+    float: left;
+    font-size: 12px;
+    color: #404040;
+    margin: 0 15px;
+    padding: 0 10px;
+}
+
+#nfc_sincereTag {
+    background-color: #0F0;
+    font-weight: bold;
+}
+
+#nfc_sosoTag {
+    background-color: #0F0;
+}
+
+#nfc_badTag {
+    background-color: #0F0;
+}
+
+#nfc_normalTag {
+    background-color: yellow;
+}
+
+#nfc_doubtTag {
+    background-color: red;
+}
+
+#nfc_sosoCom,#nfc_badCom,#nfc_normalCom,#nfc_doubtCom {
+    display: none;
+}
+
+.nfc_comList {
+    font-size: 12px;
+    margin: 5px 10px;
+    text-align: left;
+    color: #000;
+    line-height: 20px;
+    border: 1px solid #efefef;
+    border-image-source: initial;
+    border-image-slice: initial;
+    border-image-width: initial;
+    border-image-outset: initial;
+    border-image-repeat: initial;
+    border-radius: 6px;
+    background-color: #fcfcfc;
+    padding: 5px;
+    height: auto;
+    float: left;
+}
+
+.nfc_comList_left {
+    width: 650px;
+    float: left;
+}
+
+.nfc_firstCom,.nfc_appendCom.nfc_comRemark {
+    width: 100%;
+    height: auto;
+    float: left;
+}
+
+.nfc_comLeft {
+    width: 110px;
+    float: left;
+}
+
+.nfc_comDate {
+    color: #b0b0b0;
+}
+
+.nfc_productInfo {
+    color: #b0b0b0;
+}
+
+.nfc_comRight {
+    width: 520px;
+    float: left;
+    overflow: hidden;
+}
+
+.nfc_comList_right {
+    width: 120px;
+    float: left;
+    margin: 0;
+}
+
+.nfc_appendCom .nfc_comTitle {
+    color: red;
+}
+
+.nfc_comRemark {
+    color: red;
+}
+
+#nfc_priceHistory {
+    height: 70px;
+    width: 200px;
+    background-color: #fff;
+    margin-left: -30px;
+    border-top: 5px solid #ff614c;
+    position: absolute;
+    bottom: 44px;
+    font-family: SimSun;
+    box-shadow: 0 4px 20px 1px #888;
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+#nfc_priceHistoryHeader {
+    width: 100%;
+    height: 40px;
+    font-size: 12px;
+}
+
+#nfc_priceSummary {
+    float: right;
+    margin-right: 20px;
+}
+
+#nfc_curPrice {
+    color: red;
+}
+
+#nfc_maxPrice {
+    color: red;
+}
+
+#nfc_minPrice {
+    color: green;
+}
+
+#nfc_avePrice {
+    color: black;
+}
+
+#nfc_priceHistoryWrapper {
+    height: 400px;
+    width: 760px;
+    position: absolute;
+    bottom: 0;
+    left: 20px;
+}
+
+#nfc_price .nfc_arrowCover {
+    margin-left: 40px;
+}
+
+#nfc_recContent {
+    display: none;
+    height: 70px;
+    position: absolute;
+    bottom: 44px;
+    border-top: 5px solid #ff614c;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.2) 0 4px 20px 1px;
+    padding: 8px 0 0;
+    text-align: center;
+    margin-left: -30px;
+    width: 200px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.nfc_recomProducts,.nfc_goldShop {
+    height: 210px;
+    width: 1760px;
+}
+
+.nfc_recomProducts li,.nfc_goldShop li {
+    float: left;
+    text-align: center;
+    padding: 0 8px;
+    position: relative;
+    color: #000;
+    display: block;
+    width: 160px;
+    height: 230px;
+}
+
+.nfc_recomProducts li img {
+    width: 160px;
+    height: 160px;
+    float: left;
+    cursor: pointer;
+}
+
+.nfc_recomProducts li p {
+    line-height: 20px;
+    overflow: hidden;
+    height: 20px;
+    width: 160px;
+    text-align: center;
+    font-family: SimSun;
+    cursor: pointer;
+}
+
+.nfc_shopImg img {
+    width: 160px;
+    height: 160px;
+    float: left;
+    cursor: pointer;
+}
+
+.nfc_goldShop li p {
+    line-height: 30px;
+    overflow: hidden;
+    height: 30px;
+    width: 160px;
+    text-align: center;
+    font-family: SimSun;
+    cursor: pointer;
+}
+
+.nfc_shopInfo {
+    position: relative;
+    top: -5px;
+}
+
+.nfc_shopInfo img {
+    position: relative;
+    top: 0;
+}
+
+.nfc_recomProducts .nfc_productPrice {
+    color: #f36;
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 24px;
+    height: 24px;
+    width: 160px;
+}
+
+.nfc_productPrice b {
+    font-size: 14px;
+    font-family: SimHei;
+    vertical-align: 1px;
+    margin-left: 1px;
+    font-style: normal;
+    text-decoration: none;
+    text-align: left;
+}
+
+#nfc_recommend .nfc_arrowCover {
+    margin-left: 60px;
+}
+
+#nfc_cheapContent {
+    display: none;
+    height: 70px;
+    position: absolute;
+    bottom: 44px;
+    border-top: 5px solid #ff614c;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.2) 0 4px 20px 1px;
+    padding: 8px 0 0;
+    text-align: center;
+    margin-left: -30px;
+    width: 200px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#nfc_cheap .nfc_arrowCover {
+    margin-left: 60px;
+}
+
+#nfc_shopContent {
+    display: none;
+    height: 70px;
+    position: absolute;
+    bottom: 44px;
+    border-top: 5px solid #ff614c;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: rgba(0,0,0,0.2) 0 4px 20px 1px;
+    padding: 8px 0 0;
+    text-align: center;
+    margin-left: -20px;
+    width: 200px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+#nfc_recomShop .nfc_arrowCover {
+    margin-left: 60px;
+}
+
+.nfc_searchDes {
+    margin: 0 5px;
+    line-height: 30px;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+.nfc_comPicList {
+    height: 40px;
+    display: block;
+    width: 100%;
+    float: left;
+}
+
+.nfc_comPicList li {
+    border: 2px solid #f2f2f2;
+    border-radius: 2px;
+    cursor: auto;
+    float: left;
+    margin-right: 8px;
+    padding: 2px;
+    position: relative;
+    transition: border-color .2s ease-out 0;
+}
+
+.nfc_comPicList img {
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+
+.nfc_bigImageShow {
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    padding: 2px;
+    float: left;
+    overflow: hidden;
+    display: none;
+}
+
+.nfc_comPicList li b {
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: rgba(0,0,0,0) none repeat scroll 0 0;
+    border-color: #f23d6a transparent transparent;
+    border-image: none;
+    border-style: solid dashed dashed;
+    border-width: 6px;
+    bottom: -8px;
+    font-size: 0;
+    height: 0;
+    left: 15px;
+    line-height: 0;
+    opacity: 0;
+    position: absolute;
+    width: 0;
+}
+
+.nfc_numHint {
+    width: 20px;
+    height: 20px;
+    background-color: #ff614c;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 28px;
+    left: 121px;
+    display: none;
+}
+
+.nfc_numHint span {
+    height: 20px;
+    line-height: 20px;
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+.nfc_userPhoto img {
+    max-height: 25px;
+}
+
+.nfc-tm-comment {
+    color: red;
+    padding: 8px 0;
+    line-height: 24px;
+    width: 100%;
+    display: block;
+}
+
+.nfc-tm-comment i {
+    position: relative;
+    top: 10px;
+}
+
+#nfc_notice {
+    margin-left: 20px;
+    float: left;
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+}
+
+#nfc_notice a {
+    color: red;
+}
+
+.nfc_errorReport {
+    color: green;
+}
+
+.nfc_itemIntro,.nfc_warning {
+    display: none;
+    background-color: #ff614c;
+    position: absolute;
+    bottom: 60px;
+    line-height: 24px;
+    box-shadow: rgba(0,0,0,0.2) 0 0 10px;
+    border-radius: 5px;
+    z-index: -11111;
+    width: 160px;
+}
+
+.nfc_introContent {
+    font-size: 12px;
+    padding: 3px 3px 0;
+    color: #fff;
+}
+
+.nfc_introContent a {
+    text-decoration: underline;
+    color: #fff;
+}
+
+.nfc_introContent a:link {
+    color: #fff;
+}
+
+.nfc_introContent a:visited {
+    color: #fff;
+}
+
+.nfc_introContent a:active {
+    color: #fff;
+}
+
+.nfc_introContent a:hover {
+    color: #fff;
+}
+
+.nfc_itemIntro .nfc_arrowCover,.nfc_warning .nfc_arrowCover {
+    position: relative;
+    left: 40px;
+    top: 10px;
+}
+
+.nfc_itemIntro .nfc_downArrow,.nfc_warning .nfc_downArrow {
+    background-color: #ff614c;
+}
+
+#nfc_searchItemIntro {
+    width: 250px;
+}
+
+#nfc_advertise {
+    position: absolute;
+    left: 180px;
+    bottom: 44px;
+    z-index: 9999999;
+    width: 115px;
+    height: 152px;
+    display: none;
+}
+
+#nfc_advertImg {
+    width: 115px;
+    height: 152px;
+    display: block;
+    cursor: pointer;
+}
+
+#nfc_advertise i {
+    background-position: -622px -76px;
+    width: 25px;
+    height: 27px;
+    position: absolute;
+    left: 115px;
+    top: 0;
+    display: none;
+    cursor: pointer;
+}
+
+#nfc_advTitle {
+    font-size: 18px;
+    color: #ffe131;
+    display: block;
+    width: 100%;
+    height: 45px;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    text-align: center;
+    font-family: Microsoft Yahei,SimSun;
+}
+
+#nfc_app {
+    position: relative;
+}
+
+#nfc_app .nfc_appItem {
+    float: left;
+    height: 300px;
+    width: 280px;
+    text-align: center;
+    margin: 0 10px;
+}
+
+#nfc_app .nfc_arrowCover {
+    margin-left: 20px;
+}
+
+#nfc_appIndImg {
+    background-position: -634px -13px;
+    width: 13px;
+    height: 24px;
+    top: 8px;
+    margin-right: 10px;
+}
+
+#nfc_appArea {
+    padding: 10px;
+    background-color: #fff;
+    display: none;
+    border-top: 5px solid #ff614c;
+    border-bottom: 0;
+    position: absolute;
+    bottom: 44px;
+    font-family: SimSun;
+    box-shadow: 0 4px 20px 1px #888;
+    height: 50px;
+    margin-left: -122px;
+    width: 300px;
+    height: 300px;
+}
+
+.nfc_appImg {
+    width: 280px;
+    height: 280px;
+    display: block;
+    cursor: pointer;
+}
+
+#nfc_app .nfc_appItem span {
+    display: block;
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+#nfc_app a {
+    color: #000;
+}
+
+#nfc_app a:hover {
+    text-decoration: none;
+}
+
+#nfc_androidTypeImg {
+    background-position: -16px -130px;
+    width: 19px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+#nfc_iosTypeImg {
+    background-position: -74px -130px;
+    width: 18px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+    margin-right: 5px;
+}
+
+#nfc_sendReport {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 5px;
+}
