@@ -59,40 +59,154 @@
         var c = ["html:div", {
                 "class": "nfc_footbar"
             },
-           /* ["html:div", {
-                    id: "nfc_advertise"
-                },
-                ["html:i", {
-                    "class": "nfc_img",
-                    id: "nfc_advertClose"
-                }],
-                ["html:a", {
-                    id: "nfc_advTitle",
-                    href: "http://s.click.taobao.com/5LuZPPx",
-                    target: "_blank"
-                }, "双11红包"],
-                ["html:a", {
-                    id: "nfc_advertImg",
-                    href: "http://s.click.taobao.com/5LuZPPx",
-                    target: "_blank"
-                }, " "]
-            ],*/
             ["html:div", {
                     "class": "nfc_left"
                 },
-                ["html:a", {
-                        href: "http://www.nfc.com",
+                ["html:div",{
+                     id: "logo_href",
+                     "class":"nfc_left_item"
+                 },
+                    ["html:a", {
+                       
+                        href: "http://www.taobao.com",
                         target: "_blank"
                     },
-                    ["html:div", {
-                        id: "nfc_logo",
-                        "class": "nfc_img"
+                        ["html:div", {
+                            id: "nfc_logo",
+                            "class": "nfc_img"
+                        }]
+                    ],
+                    ["html:div",{
+                            id:"nfc_headline",
+                            "class":"headline",                      
+                            },"怕刷单",
+                             ["html:br"],
+                             "看这里"
+                    ]
+                ],
+                
+                ["html:div", {
+                    "class": " nfc_split"
+                    },["html:img",{
+                        src:b.thisExplorer.extension.getURL("../img/split.png")
                     }]
                 ],
-                ["html:i", {
-                    "class": "nfc_img nfc_split"
+                ["html:div", {
+                        id: "nfc_comments",
+                                "class": "nfc_item nfc_left_item"
+                        },
+                        ["html:i", {
+                            "class": "nfc_img"
+                        }], "评价按真实性分类", 
+                        ["html:div", {
+                                    "class": "nfc_numHint"
+                            },
+                            ["html:span", {}]
+                        ],
+                        ["html:div", {
+                                id: "nfc_comContent"
+                            },
+                            ["html:div", {
+                                id: "nfc_comHeader"
+                            },
+                            ["html:span", {
+                                id: "nfc_productGrade"
+                            }],
+                            ["html:span", {
+                                id: "nfc_commentType"
+                            }, "最客观评论（智能筛选的结果，", ["html:a", {
+                                href: "http://www.nfc.com/advice.php",
+                                target: "_blank",
+                                "class": "nfc_errorReport"
+                            }, "点击这里报错，让我更好地服务您）"]],
+                            ["html:a", {
+                                href: "http://www.nfc.com/help.php?aid=0&zid=191",
+                                target: "_blank",
+                                "class": "nfc_comHint"
+                            }, "什么样的商品评论比较真实？"]
+                        ],
+                        ["html:div", {
+                            id: "nfc_sincereCom",
+                            "class": "nfc_comDetails"
+                        }, "    暂时没有找到最客观评论。"],
+                        ["html:div", {
+                            id: "nfc_sosoCom",
+                            "class": "nfc_comDetails"
+                        }, "    暂时没有找到中评。"],
+                        ["html:div", {
+                            id: "nfc_badCom",
+                            "class": "nfc_comDetails"
+                        }, "    暂时没有找到差评。"],
+                        ["html:div", {
+                            id: "nfc_normalCom",
+                            "class": "nfc_comDetails"
+                        }, "    暂时没有找到真假难辨的评论。"],
+                        ["html:div", {
+                            id: "nfc_doubtCom",
+                            "class": "nfc_comDetails"
+                        }, "    暂时没有找到可疑的评论。"],
+                        ["html:div", {
+                                id: "nfc_comTags"
+                            },
+                            ["html:div", {
+                                id: "nfc_sincereTag",
+                                "class": "nfc_comTag"
+                            }, "最客观评论(0)"],
+                            ["html:div", {
+                                id: "nfc_sosoTag",
+                                "class": "nfc_comTag"
+                            }, "可信的中评(0)"],
+                            ["html:div", {
+                                id: "nfc_badTag",
+                                "class": "nfc_comTag"
+                            }, "可信的差评(0)"],
+                            ["html:div", {
+                                id: "nfc_normalTag",
+                                "class": "nfc_comTag"
+                            }, "真假难辨的评论(0)"],
+                            ["html:div", {
+                                id: "nfc_doubtTag",
+                                "class": "nfc_comTag"
+                            }, "可疑的评论(0)"]
+                        ]
+                    ],
+                    ["html:div", {
+                            "class": "nfc_arrowCover"
+                        },
+                        ["html:div", {
+                            "class": "nfc_downArrow"
+                        }]
+                    ]
+                ],
+                ["html:div", {
+                            "class": "nfc_warning nfc_left_item",
+                            id: "nfc_fakeWarning"
                 }],
-                ["html:a", {
+                ["html:div", {
+                        "class": " nfc_split"
+                }],
+                ["html:div",{
+                                id:"nfc_credit",
+                                "class":"nfc_left_item"
+                            },
+                            ["html:div",{
+                                "class":"summary"
+                                }, "店铺信誉"
+                            ],
+                           
+                            ["html:div",{
+                                id:"summary_result",
+                                "class":"summary"
+                            },
+                            "可信度高"
+                            ]
+                ],
+                ["html:div", {
+                        "class": " nfc_split"
+                }],
+                ["html:div",{
+                     "class":"nfc_left_item"
+                },["html:a", {
                         href: b.nfc_status.extension.baseURL + "options.html",
                         target: "_blank"
                     },
@@ -104,13 +218,15 @@
                             "class": "nfc_img"
                         }], "设置"
                     ]
+                    ]
                 ],
-                ["html:i", {
-                    "class": "nfc_img nfc_split"
+                
+                ["html:div", {
+                    "class": " nfc_split"
                 }],
                 ["html:div", {
                         id: "nfc_share",
-                        "class": "nfc_citem"
+                        "class": "nfc_citem nfc_left_item"
                     },
                     ["html:i", {
                         "class": "nfc_img"
@@ -118,8 +234,9 @@
                             id: "nfc_sharePart"
                         },
                         ["html:a", {
-                                href: "http://www.nfc.com/share.php?to=qzone",
-                                target: "_blank"
+                                id:"1",
+                                href: "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?"+'url=' + encodeURIComponent(document.location)+ '&showcount=0' + '&desc=' + encodeURIComponent(b.nfc_share.des),
+                                target:"_blank"
                             },
                             ["html:div", {
                                     id: "nfc_qzoneShare",
@@ -132,7 +249,8 @@
                             ]
                         ],
                         ["html:a", {
-                                href: "http://www.nfc.com/share.php?to=weibo",
+                                id:"2",
+                                href: 'http://v.t.sina.com.cn/share/share.php?'+ 'url' + encodeURIComponent(document.location) + '&title' + encodeURIComponent(b.nfc_share.des),
                                 target: "_blank"
                             },
                             ["html:div", {
@@ -146,26 +264,29 @@
                             ]
                         ],
                         ["html:a", {
-                                href: "http://www.nfc.com/share.php?to=douban",
-                                target: "_blank"
+                                id:"3",
+                                href: "#",
+                                target: "_blank",
+                                onclick:"share()"
                             },
                             ["html:div", {
-                                    id: "nfc_doubanShare",
+                                    id: "nfc_pyqShare",
                                     "class": "nfc_shareItem"
                                 },
                                 ["html:i", {
-                                    "class": "nfc_img"
+                                    "class": "nfc_pyq"
                                 }],
-                                ["html:span", {}, "豆瓣"]
+                                ["html:span", {}, "朋友圈"]
                             ]
                         ],
                         ["html:a", {
-                                href: "http://www.nfc.com/share.php?to=qq",
-                                target: "_blank"
+                                id:"4",
+                                href: "#",
                             },
                             ["html:div", {
                                     id: "nfc_qqShare",
                                     "class": "nfc_shareItem"
+                                   
                                 },
                                 ["html:i", {
                                     "class": "nfc_img"
@@ -182,126 +303,12 @@
                         }]
                     ]
                 ],
-                ["html:i", {
-                    "class": "nfc_img nfc_split"
-                }],
-               /* ["html:a", {
-                        href: "http://www.nfc.com/magazine.php",
-                        target: "_blank"
-                    },
-                    ["html:div", {
-                            id: "nfc_suggest",
-                            "class": "nfc_citem"
-                        },
-                        ["html:i", {
-                            "class": "nfc_img"
-                        }], "攻略"
-                    ]
-                ],
-                ["html:i", {
-                    "class": "nfc_img nfc_split"
-                }],*/
-                ["html:ul", {
-                        id: "nfc_functionList"
-                    },
-                    ["html:li", {},
-                        ["html:div", {
-                                id: "nfc_comments",
-                                "class": "nfc_item"
-                            },
-                            ["html:i", {
-                                "class": "nfc_img"
-                            }], "评价按真实性分类", ["html:div", {
-                                    "class": "nfc_numHint"
-                                },
-                                ["html:span", {}]
-                            ],
-                            ["html:div", {
-                                    id: "nfc_comContent"
-                                },
-                                ["html:div", {
-                                        id: "nfc_comHeader"
-                                    },
-                                    ["html:span", {
-                                        id: "nfc_productGrade"
-                                    }],
-                                    ["html:span", {
-                                        id: "nfc_commentType"
-                                    }, "最客观评论（智能筛选的结果，", ["html:a", {
-                                        href: "http://www.nfc.com/advice.php",
-                                        target: "_blank",
-                                        "class": "nfc_errorReport"
-                                    }, "点击这里报错，让我更好地服务您）"]],
-                                    ["html:a", {
-                                        href: "http://www.nfc.com/help.php?aid=0&zid=191",
-                                        target: "_blank",
-                                        "class": "nfc_comHint"
-                                    }, "什么样的商品评论比较真实？"]
-                                ],
-                                ["html:div", {
-                                    id: "nfc_sincereCom",
-                                    "class": "nfc_comDetails"
-                                }, "    暂时没有找到最客观评论。"],
-                                ["html:div", {
-                                    id: "nfc_sosoCom",
-                                    "class": "nfc_comDetails"
-                                }, "    暂时没有找到中评。"],
-                                ["html:div", {
-                                    id: "nfc_badCom",
-                                    "class": "nfc_comDetails"
-                                }, "    暂时没有找到差评。"],
-                                ["html:div", {
-                                    id: "nfc_normalCom",
-                                    "class": "nfc_comDetails"
-                                }, "    暂时没有找到真假难辨的评论。"],
-                                ["html:div", {
-                                    id: "nfc_doubtCom",
-                                    "class": "nfc_comDetails"
-                                }, "    暂时没有找到可疑的评论。"],
-                                ["html:div", {
-                                        id: "nfc_comTags"
-                                    },
-                                    ["html:div", {
-                                        id: "nfc_sincereTag",
-                                        "class": "nfc_comTag"
-                                    }, "最客观评论(0)"],
-                                    ["html:div", {
-                                        id: "nfc_sosoTag",
-                                        "class": "nfc_comTag"
-                                    }, "可信的中评(0)"],
-                                    ["html:div", {
-                                        id: "nfc_badTag",
-                                        "class": "nfc_comTag"
-                                    }, "可信的差评(0)"],
-                                    ["html:div", {
-                                        id: "nfc_normalTag",
-                                        "class": "nfc_comTag"
-                                    }, "真假难辨的评论(0)"],
-                                    ["html:div", {
-                                        id: "nfc_doubtTag",
-                                        "class": "nfc_comTag"
-                                    }, "可疑的评论(0)"]
-                                ]
-                            ],
-                            ["html:div", {
-                                    "class": "nfc_arrowCover"
-                                },
-                                ["html:div", {
-                                    "class": "nfc_downArrow"
-                                }]
-                            ]
-                        ],
-                        ["html:div", {
-                            "class": "nfc_warning",
-                            id: "nfc_fakeWarning"
-                        }]
-                    ],
-                    ["html:i", {
-                        "class": "nfc_img nfc_split"
-                    }]
-                ],
                 ["html:div", {
-                        "class": "nfc_search",
+                    "class": " nfc_split"
+                }],
+             
+                ["html:div", {
+                        "class": "nfc_search nfc_left_item",
                         id: "nfc_goodSearch"
                     },
                     ["html:form", {
@@ -396,55 +403,13 @@
                         ]
                     ]
                 ],
-                ["html:i", {
-                    "class": "nfc_img nfc_split",
+                ["html:div", {
+                    "class": " nfc_split",
                     id: "nfc_lastSplit"
                 }],
-               /* ["html:div", {
-                        id: "nfc_app",
-                        "class": "nfc_citem"
-                    },
-                    ["html:i", {
-                        "class": "nfc_img",
-                        id: "nfc_appIndImg"
-                    }],
-                    ["html:a", {
-                        href: "http://www.nfc.com/goodCmtAnalysis.php",
-                        target: "_blank"
-                    }, "下载手机APP"],
-                    ["html:div", {
-                            id: "nfc_appArea"
-                        },
-                        ["html:div", {
-                                "class": "nfc_appItem"
-                            },
-                            ["html:a", {
-                                    href: "http://www.nfc.com/goodCmtAnalysis.php",
-                                    target: "_blank"
-                                },
-                                ["html:div", {
-                                    id: "nfc_android_barcode",
-                                    "class": "nfc_appImg"
-                                }]
-                            ],
-                            ["html:span", {},
-                                ["html:i", {
-                                    "class": "nfc_img",
-                                    id: "nfc_androidTypeImg"
-                                }], "安卓版"
-                            ]
-                        ]
-                    ],
-                    ["html:div", {
-                            "class": "nfc_arrowCover"
-                        },
-                        ["html:div", {
-                            "class": "nfc_downArrow"
-                        }]
-                    ]
-                ],*/
                 ["html:div", {
-                    id: "nfc_notice"
+                    id: "nfc_notice",
+                     "class":"nfc_left_item"
                 }]
             ],
             ["html:div", {
@@ -619,23 +584,27 @@
         }, "发送检测报告"], document.getElementById("nfc_notice").appendChild(r(c, document, {})));
         c = b.thisExplorer.extension.getURL("../img/imageSprite.gif");
         $(".nfc_img").css("background-image", "url(" + c + ")");
-        c = b.thisExplorer.extension.getURL("../img/bgImg.png");
-        $(".nfc_footbar").css("background-image", "url(" + c + ")");
+        c = b.thisExplorer.extension.getURL("../img/pyq1.png");
+        $(".nfc_pyq").css("background-image","url(" + c + ")");
+        /*c = b.thisExplorer.extension.getURL("../img/bgImg.png");
+        $(".nfc_footbar").css("background-image", "url(" + c + ")");*/
+        c = b.thisExplorer.extension.getURL("../img/split.png");
+        $(".nfc_split").css("background-image","url(" + c + ")");
        /* c = b.thisExplorer.extension.getURL("../img/android_barcode.png");
         $("#nfc_android_barcode").css("background-image", "url(" + c + ")");*/
         var l = (new Date).format("yyyy-MM-dd");
         /*"2016-11-11" >= l && (void 0 == localStorage.advertShowDate || localStorage.advertShowDate < l) && (c = b.thisExplorer.extension.getURL("../images/advertise8.gif"), $("#nfc_advertImg").css("background-image", "url(" + c + ")"), $("#nfc_advertise").show());*/
-        void 0 === localStorage.expanded || 1 == localStorage.expanded ? ($("#nfc_config").show(), $("#nfc_share").show(), $("#nfc_min").show(), $("#nfc_max").hide(), $(".nfc_left").css("width", "100%"), $(".nfc_footbar").css("width", "100%")) : ($("#nfc_config").hide(), $("#nfc_share").hide(), $("#nfc_min").hide(), $("#nfc_max").show(), $(".nfc_left").css("width", "49px"), $(".nfc_footbar").css("width", "59px"));
+        void 0 === localStorage.expanded || 1 == localStorage.expanded ? ($("#nfc_config").show(), $("#nfc_share").show(), $("#nfc_min").show(), $("#nfc_max").hide(), $(".nfc_left").css("height", "400px"), $(".nfc_footbar").css("height", "500px")) : ($("#nfc_config").hide(), $("#nfc_share").hide(), $("#nfc_min").hide(), $("#nfc_max").show(), $(".nfc_left").css("height", "90px"), $(".nfc_footbar").css("height", "100px"));
         $("#nfc_min").click(function() {
             $("#nfc_config").hide();
             $("#nfc_share").hide();
             $("#nfc_min").hide();
             $("#nfc_max").show();
             $(".nfc_left").animate({
-                width: "49px"
+                height: "90px"
             });
             $(".nfc_footbar").animate({
-                width: "59px"
+                height: "100px"
             });
             localStorage.expanded = 0;
             //y()
@@ -645,9 +614,9 @@
             $("#nfc_share").show();
             $("#nfc_min").show();
             $("#nfc_max").hide();
-            $(".nfc_left").css("width", "100%");
+            $(".nfc_left").css("height", "400px");
             $(".nfc_footbar").animate({
-                width: "100%"
+                height: "500px"
             }, "fast", y);
             localStorage.expanded = 1;
             //y()
@@ -1311,7 +1280,7 @@
         $(".nfc_comPicList li").children("img").css("cursor", "url(" + b.nfc_status.extension.baseURL + "images/zoom_in.png), url(" + b.nfc_status.extension.baseURL + "images/zoom_in.cur), auto");
         return !0
     }
-
+    
     function u() {
         $(".nfc_comPicList li").unbind("click");
         $(".nfc_bigImageShow").unbind("click");

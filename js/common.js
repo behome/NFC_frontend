@@ -26,6 +26,7 @@
     e.nfc_status.extension.preRead = 0;
     e.nfc_status.extension.itemTipShow = 0;
     e.nfc_product = {};
+    e.nfc_share = {};
     e.nfc_product.websiteId = 0;
     e.nfc_product.webOptionsName = "";
     e.nfc_product.websiteName = "";
@@ -66,6 +67,7 @@
     e.nfc_product.sendProductInspectReport = 0;
     e.nfc_product.checkTimes = 0;
     e.nfc_product.repeatCounter = 0;
+    e.nfc_share.des = '我发现一个好商品，大家快来看看吧';
     Date.prototype.format = function(a) {
             var b = {
                 "M+": this.getMonth() + 1,
