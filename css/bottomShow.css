@@ -1,17 +1,24 @@
 .nfc_footbar {
     opacity: 1;
     display: block;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    height: 44px;
+    top: 100px;
+    left: 50px;
+   width: 140px;
+   /* height: 44px;*/
     margin: 0;
     padding: 0;
     position: fixed;
     font-family: SimSun;
     z-index: 2147483647;
-    background-repeat: repeat-x;
 }
+
+
+.nfc_left_item{
+    background-color: #f08080;
+    height: 49px;
+    width: 140px;
+}
+
 
 .nfc_footbar * {
     box-sizing: content-box;
@@ -25,28 +32,56 @@
 }
 
 .nfc_left {
+    /*float:left;*/
+    padding-top: 5px;
+   /* font-size: 12px;*/
+}
+
+#nfc_headline{
+    margin-left: 10px;
+}
+
+#logo_href a{
     float: left;
-    height: 44px;
-    font-size: 12px;
+}
+
+#nfc_headline{
+    float: left;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f22e00;
+    font-family: "微软简粗黑"; 
+}
+
+
+.summary{
+    float: left;
+    color: #000;
+}
+
+#summary_result{
+    font-size: 14px;
+    margin-left: 10px;
+    color: red;
 }
 
 .nfc_right {
     width: 10px;
     height: 44px;
-    position: absolute;
-    right: 0;
-    top: 0;
+    position: relative;
+    left: 0;
+    top: 0px;
 }
 
 .nfc_left ul {
     display: inline-block;
-    float: left;
-    margin: 0;
+    /*float:left;*/
+    padding-top: 5px;
 }
 
 .nfc_left li {
-    float: left;
-    text-align: center;
+    /*float:left;*/
     line-height: 44px;
     position: relative;
     color: #000;
@@ -56,7 +91,7 @@
     position: relative;
     height: 44px;
     line-height: 44px;
-    float: left;
+    /*float:left;*/
     display: inline-block;
     cursor: pointer;
     color: #000;
@@ -65,7 +100,7 @@
 .nfc_left .nfc_item {
     position: relative;
     height: 44px;
-    float: left;
+    /*float:left;*/
     cursor: pointer;
     text-align: center;
 }
@@ -75,7 +110,7 @@
 }
 
 .nfc_searchOrder {
-    float: left;
+    /*float:left;*/
     height: 44px;
     line-height: 44px;
     display: inline-block;
@@ -84,15 +119,15 @@
 }
 
 .nfc_search {
-    float: left;
+    /*float:left;*/
     display: inline-block;
-    width: 306px;
+    width: 140px;
 }
 
 .nfc_search form {
-    float: left;
+   /*float:left;*/
     height: 44px;
-    width: 100%;
+    width: 140px;
 }
 
 .nfc_keyword,.nfc_footbar input[type=text] {
@@ -104,7 +139,7 @@
     border-right: 0;
     font-size: 12px;
     color: #cbcbcb;
-    float: left;
+    /*float:left;*/
     margin-right: 10px;
     position: relative;
     top: 7px;
@@ -118,7 +153,7 @@
     width: 31px;
     height: 30px;
     top: 8px;
-    float: left;
+    /*float:left;*/
 }
 
 #nfc_min {
@@ -142,7 +177,7 @@
     background-position: -3px -2px;
     width: 44px;
     height: 44px;
-    float: left;
+    /*float:left;*/
     margin-right: 10px;
     cursor: pointer;
 }
@@ -176,6 +211,12 @@
     width: 20px;
     height: 20px;
     top: 5px;
+    margin-right: 10px;
+}
+
+#nfc_credit{
+/*    width: 20px;*/
+    height: 44px;
     margin-right: 10px;
 }
 
@@ -231,8 +272,8 @@
     height: 32px;
 }
 
-#nfc_doubanShare i {
-    background-position: -247px -72px;
+#nfc_pyqShare i {
+    background-position: 0 5px;
     width: 32px;
     height: 32px;
 }
@@ -266,7 +307,7 @@
 }
 
 #nfc_share .nfc_shareItem {
-    float: left;
+    float:left;
     height: 60px;
     width: 50px;
     text-align: center;
@@ -295,13 +336,15 @@
     border-top: 5px solid #ff614c;
     border-bottom: 0;
     position: absolute;
-    bottom: 44px;
+    top: 20px;
+    left:55px;
     font-family: SimSun;
     box-shadow: 0 4px 20px 1px #888;
     height: 50px;
     margin-left: -67px;
     width: 200px;
     height: 60px;
+    z-index: 5;
 }
 
 .nfc_img {
@@ -335,11 +378,15 @@
 }
 
 .nfc_split {
-    background-position: -390px -16px;
-    width: 1px;
-    height: 23px;
-    float: left;
-    margin: 10px;
+    /*background-position: -390px -16px;*/
+    width: 140px;
+    height: 10px;
+    /*float:left;*/
+}
+
+.nfc_split img{
+    width: 140px;
+    height:10px;
 }
 
 .nfc_arrowCover {
@@ -347,7 +394,7 @@
     width: 40px;
     overflow: hidden;
     position: absolute;
-    left: 0;
+    right: 0;
     bottom: 34px;
     display: none;
 }
@@ -358,29 +405,30 @@
     background: none 0 0 repeat scroll #fff;
     height: 40px;
     position: absolute;
-    left: 0;
+    right: 0;
     width: 40px;
     bottom: 10px;
 }
 
 #nfc_comContent {
-    padding-bottom: 40px;
+    padding-left: 40px;
     background-color: #fff;
-    margin-left: -239px;
+    margin-left: 20px;
     border-top: 5px solid #ff614c;
     width: 820px;
     min-height: 80px;
     max-height: 520px;
     position: absolute;
-    bottom: 44px;
+    left: 100px;
     font-family: SimSun;
     box-shadow: 0 4px 20px 1px #888;
     display: none;
     overflow: hidden;
+    z-index: 5;
 }
 
 #nfc_comHeader {
-    width: 100%;
+    width: 140px;
     height: 40px;
     background-color: #f0f0f0;
     text-align: center;
@@ -391,7 +439,7 @@
 }
 
 #nfc_productGrade {
-    float: left;
+    float:left;
     color: red;
     font-size: 12px;
 }
@@ -408,7 +456,7 @@
 }
 
 #nfc_comContent .nfc_comDetails {
-    float: left;
+    float:left;
     width: 100%;
     min-height: 30px;
     max-height: 440px;
@@ -441,7 +489,7 @@
     text-align: center;
     line-height: 20px;
     height: 20px;
-    float: left;
+    float:left;
     font-size: 12px;
     color: #404040;
     margin: 0 15px;
@@ -489,23 +537,23 @@
     background-color: #fcfcfc;
     padding: 5px;
     height: auto;
-    float: left;
+    float:left;
 }
 
 .nfc_comList_left {
     width: 650px;
-    float: left;
+    float:left;
 }
 
 .nfc_firstCom,.nfc_appendCom.nfc_comRemark {
     width: 100%;
     height: auto;
-    float: left;
+    float:left;
 }
 
 .nfc_comLeft {
     width: 110px;
-    float: left;
+    float:left;
 }
 
 .nfc_comDate {
@@ -518,13 +566,13 @@
 
 .nfc_comRight {
     width: 520px;
-    float: left;
+    float:left;
     overflow: hidden;
 }
 
 .nfc_comList_right {
     width: 120px;
-    float: left;
+    float:left;
     margin: 0;
 }
 
@@ -613,7 +661,7 @@
 }
 
 .nfc_recomProducts li,.nfc_goldShop li {
-    float: left;
+    /*float:left;*/
     text-align: center;
     padding: 0 8px;
     position: relative;
@@ -626,7 +674,7 @@
 .nfc_recomProducts li img {
     width: 160px;
     height: 160px;
-    float: left;
+    /*float:left;*/
     cursor: pointer;
 }
 
@@ -643,7 +691,7 @@
 .nfc_shopImg img {
     width: 160px;
     height: 160px;
-    float: left;
+    /*float:left;*/
     cursor: pointer;
 }
 
@@ -743,14 +791,14 @@
     height: 40px;
     display: block;
     width: 100%;
-    float: left;
+    float:left;
 }
 
 .nfc_comPicList li {
     border: 2px solid #f2f2f2;
     border-radius: 2px;
     cursor: auto;
-    float: left;
+    float:left;
     margin-right: 8px;
     padding: 2px;
     position: relative;
@@ -767,7 +815,7 @@
     margin: 10px 0;
     border: 1px solid #ccc;
     padding: 2px;
-    float: left;
+    float:left;
     overflow: hidden;
     display: none;
 }
@@ -831,7 +879,7 @@
 
 #nfc_notice {
     margin-left: 20px;
-    float: left;
+    /*float:left;*/
     height: 44px;
     line-height: 44px;
     display: inline-block;
@@ -898,7 +946,7 @@
     width: 250px;
 }
 
-#nfc_advertise {
+/*#nfc_advertise {
     position: absolute;
     left: 180px;
     bottom: 44px;
@@ -937,21 +985,21 @@
     left: 0;
     text-align: center;
     font-family: Microsoft Yahei,SimSun;
-}
+}*/
 
-#nfc_app {
+/*#nfc_app {
     position: relative;
 }
 
 #nfc_app .nfc_appItem {
-    float: left;
+    /*float:left;
     height: 300px;
     width: 280px;
     text-align: center;
     margin: 0 10px;
-}
+}*/
 
-#nfc_app .nfc_arrowCover {
+/*#nfc_app .nfc_arrowCover {
     margin-left: 20px;
 }
 
@@ -1027,4 +1075,4 @@
     font-weight: bold;
     cursor: pointer;
     padding: 5px;
-}
+}*/
