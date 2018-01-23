@@ -38,7 +38,7 @@
             // 多个JS按顺序注入
             "js": ["lib/jquery-3.0.0.min.js", "js/common.js","js/content-script.js"],
             // JS的注入可以随便一点，但是CSS的注意就要千万小心了，因为一不小心就可能影响全局样式
-            "css": ["css/custom.css"],
+            "css": ["css/bottomShow.css","css/custom.css"],
             // 代码注入的时间，可选值： "document_end", "document_end", or "document_idle"，最后一个表示页面空闲时，默认document_idle
             "run_at": "document_idle"
         }
@@ -56,7 +56,8 @@
         "*://*.taobao.com/*","*://*.jd.com/*","*://*.yhd.com/*","*://*.dangdang.com/*","*://*.amazon.cn/*","*://*.gome.com.cn/*","*://*.suning.com/*","*://*.yao.95095.com/*","*://*.liangxinyao.com/*"
     ],
     // 普通页面能够直接访问的插件资源列表，如果不设置是无法直接访问的
-    "web_accessible_resources": ["js/inject.js"],
+    "web_accessible_resources": [
+    "img/*.png", "img/*.gif", "img/*.cur","options.html"],
     // 插件主页，这个很重要，不要浪费了这个免费广告位
     "homepage_url": "https://www.baidu.com",
    // Chrome40以前的插件配置页写法
