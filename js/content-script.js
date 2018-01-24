@@ -250,7 +250,7 @@
                         ],
                         ["html:a", {
                                 id:"2",
-                                href: 'http://v.t.sina.com.cn/share/share.php?'+ 'url' + encodeURIComponent(document.location) + '&title' + encodeURIComponent(b.nfc_share.des),
+                                href: 'http://v.t.sina.com.cn/share/share.php?'+ 'url=' + encodeURIComponent(document.location) + '&title=' + encodeURIComponent(b.nfc_share.des),
                                 target: "_blank"
                             },
                             ["html:div", {
@@ -264,24 +264,8 @@
                             ]
                         ],
                         ["html:a", {
-                                id:"3",
-                                href: "#",
-                                target: "_blank",
-                                onclick:"share()"
-                            },
-                            ["html:div", {
-                                    id: "nfc_pyqShare",
-                                    "class": "nfc_shareItem"
-                                },
-                                ["html:i", {
-                                    "class": "nfc_pyq"
-                                }],
-                                ["html:span", {}, "朋友圈"]
-                            ]
-                        ],
-                        ["html:a", {
                                 id:"4",
-                                href: "#",
+                                href: "http://connect.qq.com/widget/shareqq/index.html?url="+ encodeURIComponent(document.location) + "&showcount=0&desc=" + encodeURIComponent(b.nfc_share.des) ,
                             },
                             ["html:div", {
                                     id: "nfc_qqShare",
