@@ -205,6 +205,7 @@
                         "class": " nfc_split"
                 }],
                 ["html:div",{
+                     id:"nfc_setting",
                      "class":"nfc_left_item"
                 },["html:a", {
                         href: b.nfc_status.extension.baseURL + "options.html",
@@ -222,6 +223,7 @@
                 ],
                 
                 ["html:div", {
+                    id:"nfc_last2split",
                     "class": " nfc_split"
                 }],
                 ["html:div", {
@@ -287,127 +289,23 @@
                         }]
                     ]
                 ],
-                ["html:div", {
-                    "class": " nfc_split"
-                }],
-             
-                ["html:div", {
-                        "class": "nfc_search nfc_left_item",
-                        id: "nfc_goodSearch"
-                    },
-                    ["html:form", {
-                            "class": "nfc_searchForm",
-                            action: "javascript:void(0)",
-                            enctype: "multipart/form-data",
-                            method: "post",
-                            "accept-charset": "UTF-8"
-                        },
-                        ["html:div", {
-                                "class": "nfc_searchOrder"
-                            },
-                            ["html:i", {
-                                "class": "nfc_img"
-                            }], "搜索", ["html:select", {
-                                    "class": "nfc_searchDes",
-                                    name: "nfc_searchType"
-                                },
-                                ["html:option", {
-                                    value: "4-1"
-                                }, "金牌卖家"],
-                                ["html:option", {
-                                    value: "4-2"
-                                }, "放心店铺"],
-                                ["html:option", {
-                                    value: "4-9"
-                                }, "特色网店"],
-                                ["html:option", {
-                                    value: "6-41"
-                                }, "最好看/好吃的商品"],
-                                ["html:option", {
-                                    value: "6-44"
-                                }, "性价比最高的商品"],
-                                ["html:option", {
-                                    value: "6-11"
-                                }, "服务最好的商品"],
-                                ["html:option", {
-                                    value: "6-46",
-                                    selected: "selected"
-                                }, "质量最好的商品"],
-                                ["html:option", {
-                                    value: "6-40"
-                                }, "总体最好的商品"]
-                            ]
-                        ],
-                        ["html:input", {
-                            "class": "nfc_keyword",
-                            name: "keyword",
-                            type: "text",
-                            placeholder: "输入商品",
-                            value: "",
-                            autocomplete: "off",
-                            "aria-autocomplete": "list"
-                        }],
-                        ["html:input", {
-                            "class": "nfc_searchbtn nfc_img",
-                            type: "submit",
-                            value: ""
-                        }],
-                        ["html:input", {
-                            type: "hidden",
-                            name: "keyFrom",
-                            "class": "keyFrom",
-                            value: "chromebottom"
-                        }],
-                        ["html:input", {
-                            type: "hidden",
-                            name: "typeId",
-                            "class": "typeId",
-                            value: "6"
-                        }],
-                        ["html:input", {
-                            type: "hidden",
-                            name: "shopType",
-                            "class": "shopType",
-                            value: "0"
-                        }]
-                    ],
-                    ["html:div", {
-                            "class": "nfc_itemIntro",
-                            id: "nfc_searchItemIntro"
-                        },
-                        ["html:div", {
-                            "class": "nfc_introContent"
-                        }, "在这里可以用多种方法搜索好商品和好网店"],
-                        ["html:div", {
-                                "class": "nfc_arrowCover"
-                            },
-                            ["html:div", {
-                                "class": "nfc_downArrow"
-                            }]
-                        ]
-                    ]
-                ],
+                             
                 ["html:div", {
                     "class": " nfc_split",
                     id: "nfc_lastSplit"
                 }],
-                ["html:div", {
-                    id: "nfc_notice",
-                     "class":"nfc_left_item"
-                }]
             ],
             ["html:div", {
                     "class": "nfc_right"
                 },
                 ["html:div", {
                     id: "nfc_min",
-                    title: "最小化",
-                    "class": "nfc_img"
+                    title: "最小化"
                 }],
                 ["html:div", {
                     id: "nfc_max",
-                    title: "最大化",
-                    "class": "nfc_img"
+                    title: "最大化"
+                    
                 }]
             ]
         ];
@@ -570,38 +468,46 @@
         $(".nfc_img").css("background-image", "url(" + c + ")");
         c = b.thisExplorer.extension.getURL("../img/pyq1.png");
         $(".nfc_pyq").css("background-image","url(" + c + ")");
-        /*c = b.thisExplorer.extension.getURL("../img/bgImg.png");
-        $(".nfc_footbar").css("background-image", "url(" + c + ")");*/
+        c = b.thisExplorer.extension.getURL("../img/upArrow.png");
+        $("#nfc_min").css("background-image","url(" + c + ")");
+        c = b.thisExplorer.extension.getURL("../img/downArrow.png");
+        $("#nfc_max").css("background-image","url(" + c + ")");
+
+       /* $(".nfc_footbar").css("background-image", "url(" + c + ")");*/
         c = b.thisExplorer.extension.getURL("../img/split.png");
         $(".nfc_split").css("background-image","url(" + c + ")");
        /* c = b.thisExplorer.extension.getURL("../img/android_barcode.png");
         $("#nfc_android_barcode").css("background-image", "url(" + c + ")");*/
         var l = (new Date).format("yyyy-MM-dd");
         /*"2016-11-11" >= l && (void 0 == localStorage.advertShowDate || localStorage.advertShowDate < l) && (c = b.thisExplorer.extension.getURL("../images/advertise8.gif"), $("#nfc_advertImg").css("background-image", "url(" + c + ")"), $("#nfc_advertise").show());*/
-        void 0 === localStorage.expanded || 1 == localStorage.expanded ? ($("#nfc_config").show(), $("#nfc_share").show(), $("#nfc_min").show(), $("#nfc_max").hide(), $(".nfc_left").css("height", "400px"), $(".nfc_footbar").css("height", "500px")) : ($("#nfc_config").hide(), $("#nfc_share").hide(), $("#nfc_min").hide(), $("#nfc_max").show(), $(".nfc_left").css("height", "90px"), $(".nfc_footbar").css("height", "100px"));
+        void 0 === localStorage.expanded || 1 == localStorage.expanded ? ($("#nfc_setting").show(), $("#nfc_share").show(), $("#nfc_min").show(), $("#nfc_max").hide(), $("#nfc_last2split").show(), $("#nfc_lastSplit").show() ,$(".nfc_left").css("height", "300px"), $(".nfc_footbar").css("height", "350px")) : ($("#nfc_setting").hide(), $("#nfc_share").hide(), $("#nfc_min").hide(), $("#nfc_last2split").show(), $("#nfc_lastSplit").show() , $("#nfc_max").show(), $(".nfc_left").css("height", "90px"), $(".nfc_footbar").css("height", "100px"));
         $("#nfc_min").click(function() {
-            $("#nfc_config").hide();
+            $("#nfc_setting").hide();
             $("#nfc_share").hide();
             $("#nfc_min").hide();
             $("#nfc_max").show();
+            $("#nfc_lastSplit").hide();
+            $("#nfc_last2split").hide();
             $(".nfc_left").animate({
-                height: "90px"
+                height: "190px"
             });
             $(".nfc_footbar").animate({
-                height: "100px"
+                height: "200px"
             });
             localStorage.expanded = 0;
             //y()
         });
         $("#nfc_max").click(function() {
-            $("#nfc_config").show();
+            $("#nfc_setting").show();
             $("#nfc_share").show();
             $("#nfc_min").show();
+            $("#nfc_lastSplit").show();
+            $("#nfc_last2split").show();
             $("#nfc_max").hide();
-            $(".nfc_left").css("height", "400px");
+            $(".nfc_left").css("height", "300px");
             $(".nfc_footbar").animate({
-                height: "500px"
-            }, "fast", y);
+                height: "350px"
+            }, "fast");
             localStorage.expanded = 1;
             //y()
         });
@@ -779,7 +685,7 @@
                 text: "点击这里报错，让我更好地服务您）"
             }))
         });
-        $(".nfc_searchForm").submit(function() {
+        /*$(".nfc_searchForm").submit(function() {
             var a = $(this).find(".nfc_keyword").val(),
                 c = /^\s+$/;
             if (1 > a.length || c.test(a)) return !1;
@@ -792,7 +698,7 @@
                 keyFrom: d,
                 keyword: a
             }, function(b) {})
-        });
+        });*/
         $(window).resize(function() {
            // y()
         })
