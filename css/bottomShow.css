@@ -67,7 +67,7 @@
 }
 
 .nfc_right {
-    width: 10px;
+    width: 12px;
     height: 44px;
     position: relative;
     left: 0;
@@ -158,14 +158,14 @@
 
 #nfc_min {
     width: 140px;
-    height: 10px;
+    height: 12px;
     top: 0;
     cursor: pointer;
 }
 
 #nfc_max {
     width: 140px;
-    height: 10px;
+    height: 12px;
     top: 0;
     cursor: pointer;
     display: none;
