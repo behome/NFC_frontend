@@ -27,6 +27,7 @@
     e.nfc_status.extension.itemTipShow = 0;
     e.nfc_product = {};
     e.nfc_share = {};
+    e.nfc_share.state = 0
     e.nfc_product.websiteId = 0;
     e.nfc_product.webOptionsName = "";
     e.nfc_product.websiteName = "";

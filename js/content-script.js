@@ -480,7 +480,7 @@
         $("#nfc_android_barcode").css("background-image", "url(" + c + ")");*/
         var l = (new Date).format("yyyy-MM-dd");
         /*"2016-11-11" >= l && (void 0 == localStorage.advertShowDate || localStorage.advertShowDate < l) && (c = b.thisExplorer.extension.getURL("../images/advertise8.gif"), $("#nfc_advertImg").css("background-image", "url(" + c + ")"), $("#nfc_advertise").show());*/
-        void 0 === localStorage.expanded || 1 == localStorage.expanded ? ($("#nfc_setting").show(), $("#nfc_share").show(), $("#nfc_min").show(), $("#nfc_max").hide(), $("#nfc_last2split").show(), $("#nfc_lastSplit").show() ,$(".nfc_left").css("height", "300px"), $(".nfc_footbar").css("height", "350px")) : ($("#nfc_setting").hide(), $("#nfc_share").hide(), $("#nfc_min").hide(), $("#nfc_last2split").show(), $("#nfc_lastSplit").show() , $("#nfc_max").show(), $(".nfc_left").css("height", "90px"), $(".nfc_footbar").css("height", "100px"));
+        void 0 === localStorage.expanded || 1 == localStorage.expanded ? ($("#nfc_setting").show(), $("#nfc_share").show(), $("#nfc_min").show(), $("#nfc_max").hide(), $("#nfc_last2split").show(), $("#nfc_lastSplit").show() ,$(".nfc_left").css("height", "290px"), $(".nfc_footbar").css("height", "330px")) : ($("#nfc_setting").hide(), $("#nfc_share").hide(), $("#nfc_min").hide(), $("#nfc_last2split").hide(), $("#nfc_lastSplit").hide() , $("#nfc_max").show(), $(".nfc_left").css("height", "170px"), $(".nfc_footbar").css("height", "180px"));
         $("#nfc_min").click(function() {
             $("#nfc_setting").hide();
             $("#nfc_share").hide();
@@ -489,10 +489,10 @@
             $("#nfc_lastSplit").hide();
             $("#nfc_last2split").hide();
             $(".nfc_left").animate({
-                height: "190px"
+                height: "170px"
             });
             $(".nfc_footbar").animate({
-                height: "200px"
+                height: "180px"
             });
             localStorage.expanded = 0;
             //y()
@@ -504,9 +504,9 @@
             $("#nfc_lastSplit").show();
             $("#nfc_last2split").show();
             $("#nfc_max").hide();
-            $(".nfc_left").css("height", "300px");
+            $(".nfc_left").css("height", "290px");
             $(".nfc_footbar").animate({
-                height: "350px"
+                height: "330px"
             }, "fast");
             localStorage.expanded = 1;
             //y()
@@ -514,14 +514,22 @@
         $("#nfc_sendReport").click(function() {
             10 > b.nfc_product.defaultCommentNum && 0 == b.nfc_product.commentDoubtful ? alert("评论数据太少了。") : a()
         });
-        $("#nfc_share").mouseover(function() {
-            $("#nfc_sharePart").show();
-            $("#nfc_share .nfc_arrowCover").show()
+        $("#nfc_share").click(function() {
+            if(b.nfc_share.state == 0){
+                $("#nfc_sharePart").show();
+                $("#nfc_share .nfc_arrowCover").show();
+                b.nfc_share.state = 1;
+            }else{
+                $("#nfc_sharePart").hide();
+                $("#nfc_share .nfc_arrowCover").hide();
+                b.nfc_share.state = 0;
+            }
+           
         });
-        $("#nfc_share").mouseout(function() {
+        /*$("#nfc_share").click(function() {
             $("#nfc_sharePart").hide();
             $("#nfc_share .nfc_arrowCover").hide()
-        });
+        });*/
         $("#nfc_comments").mouseover(function() {
             $("#nfc_comContent").show();
             $("#nfc_comments .nfc_arrowCover").show();
@@ -703,8 +711,8 @@
            // y()
         })
     }
-
-    function E(a) {
+    //推荐商品可以去掉
+   /* function E(a) {
         var c, d = a.good,
             e = 0,
             l = 0,
@@ -911,7 +919,7 @@
         0 == b.nfc_status.extension.itemTipShow && (0 != e && 0 != k && 0 != l || $("#nfc_recomItemIntro").html(""), 0 == q && $("#nfc_shopItemIntro").html(""), $(".nfc_itemIntro").show(), $(".nfc_itemIntro .nfc_arrowCover").show());
         0 < a.fake && A(a);
         return !0
-    }
+    }*/
 
     function A(a) {
         if (!a.fake) return !1;
@@ -1247,7 +1255,7 @@
         y();
         return !0
     }
-
+    //解析购物网站信息，得到商品id，网站主机名，方便后期对于不同网站采用不同分析对策
     function F() {
         var a = window.location.host;
         if (0 <= a.indexOf("taobao.com")) b.nfc_product.websiteId = 1, b.nfc_product.websiteName = "淘宝",b.nfc_product.webOptionsName = "taobao", G();
@@ -1300,7 +1308,7 @@
         }
         return !0
     }
-
+    //淘宝网信息解析
     function G() {
         var a = /([\s\S]*?)-(tmall|\u6dd8\u5b9d|\u5929\u732b)[\s\S]*?/i,
             c = document.title.match(a);
@@ -1322,7 +1330,7 @@
         });
         return !0
     }
-
+    //天猫网信息解析
     function H() {
         var a = /([\s\S]*?)-(tmall|\u6dd8\u5b9d|\u5929\u732b)[\s\S]*?/i;
         if (a = document.title.match(a)) b.nfc_product.name = a[1];
@@ -1339,7 +1347,7 @@
         });
         return !0
     }
-
+    //京东信息解析
     function I() {
         b.nfc_product.name = $(".sku-name").html();
         if (!b.nfc_product.name || 1 > b.nfc_product.name.length) b.nfc_product.name = $("h1").text();
@@ -1355,7 +1363,7 @@
         });
         return !0
     }
-
+    //当当网信息解析
     function J() {
         var a, c = $("h1").html();
         void 0 === c && (c = "");
@@ -1699,7 +1707,7 @@
         }
         return a.length
     }
-
+    //提前获取各大网站评论数据
     function Q() {
         if (!b.nfc_config.settings.commentWords || void 0 === b.nfc_config.settings.commentWords.neg) return !0;
         switch (b.nfc_product.websiteId) {
@@ -1778,7 +1786,7 @@
         });
         return !0
     }
-
+    //载入评论分析结果
     function R() {
         //var a = b.nfc_configModule.getSearchClass(b.nfc_product.name);
         b.nfc_product.classId = 1;
@@ -1805,7 +1813,7 @@
             case 8:
                 Y()
         }
-        if (b.nfc_status.extension.preRead==8) Q();
+        if (b.nfc_status.extension.preRead) Q();
         else if (0 == b.nfc_product.sincereComments.length + b.nfc_product.sosoComments.length + b.nfc_product.badComments.length + b.nfc_product.normalComments.length + b.nfc_product.doubtComments.length)
             for (var c = 1; 5 >= c; c++) {
                 switch (c) {
@@ -1921,7 +1929,7 @@
         0 < c && $(".nfc_searchDes option").eq(c + 2).attr("selected", "selected");
        // b.nfc_configModule.getRecommendExecute(a.word, c)
     }
-
+    //根据分析结果选择要显示的句子
     function v(b) {
         var c = {
             resultType: "",
@@ -1985,10 +1993,11 @@
         }
         return c
     }
-
+    //找到淘宝商品评论区位置，分析评论注入评论分析结果
     function S() {
         var a = 0;
         (new Date).getFullYear();
+        //找到评论区
         b.nfc_configModule.findCommentArea = function() {
             var b = $(".J_KgRate_Main").html();
             if (b && 0 <= b.indexOf("J_KgRate_ReviewItem") && 0 > b.indexOf("nfc-tm-comment")) return c(), a || ($(".kg-rate-wd-filter-bar").click(function() {
@@ -2002,6 +2011,7 @@
         };
         var c = function() {
             b.nfc_product.defaultComments || (b.nfc_product.defaultComments = []);
+            //对于评论区里的每一个评论，拆分出来他的具体信息，并存储
             $("li.J_KgRate_ReviewItem").each(function() {
                 content = $(this).html();
                 content = content.replace(/>\s+</g, "><");
@@ -2022,10 +2032,12 @@
                 }))
             });
             0 == b.nfc_status.extension.preRead && (b.nfc_product.defaultCommentNum = 0);
+            //分析评论
             b.nfc_configModule.analyzeCommentData();
             e();
             t();
             u()
+            //拆分每一条评论的内容信息，包括评论者、评论时间等等
         }, d = function(b) {
                 var a, c, d;
                 c = {
@@ -2064,6 +2076,7 @@
                     }
                 }
                 return c
+                //向每一条评论下面添加分析结果
             }, e = function() {
                 var a, c, e = b.thisExplorer.extension.getURL("../images/imageSprite.gif"),
                     k = $(".J_KgRate_Filter li.is-current").attr("data-kg-rate-filter-val");
@@ -2090,7 +2103,7 @@
             setTimeout(nfc_configModule.findCommentArea, 1E3)
         })
     }
-
+    //天猫
     function T() {
         var a = 0,
             c = (new Date).getFullYear();
@@ -2199,7 +2212,7 @@
             setTimeout(nfc_configModule.findCommentArea, 1E3)
         })
     }
-
+    //京东
     function U() {
         var a = 0;
         (new Date).getFullYear();
@@ -2351,7 +2364,7 @@
             setTimeout(nfc_configModule.findCommentArea, 1E3)
         })
     }
-
+    //一号店
     function V() {
         b.nfc_product.repeatCounter = 0;
         (new Date).getFullYear();
@@ -2460,7 +2473,7 @@
             setTimeout(nfc_configModule.findCommentArea, 1E3)
         })
     }
-
+    //当当网
     function W() {
         b.nfc_product.repeatCounter = 0;
         (new Date).getFullYear();
@@ -2564,7 +2577,7 @@
             setTimeout(nfc_configModule.findCommentArea, 1E3)
         })
     }
-
+    //国美
     function X() {
         b.nfc_product.repeatCounter = 0;
         (new Date).getFullYear();
@@ -2657,7 +2670,7 @@
             setTimeout(nfc_configModule.findCommentArea, 1E3)
         })
     }
-
+    //苏宁
     function Y() {
         b.nfc_product.repeatCounter = 0;
         (new Date).getFullYear();
@@ -2770,7 +2783,7 @@
             setTimeout(nfc_configModule.findCommentArea, 1E3)
         })
     }
-
+    //亚马逊，情况特殊
     function Z(a) {
         for (var c, d, e, l, n, h, k, f = /class=\"a-section review\"[\s\S]*?class=\"a-icon-alt\">([\d.]+) \u9897\u661f[\s\S]*?\u7559\u8a00\u8005[\s\S]*?author\"[\s\S]*?\">([\s\S]*?)<\/a>[\s\S]*?review-date\">\u4e8e ([\s\S]*?)<\/span>[\s\S]*?review-text\">([\s\S]*?)<\/span>/ig, q = 0; null !== (d = f.exec(a));) q++, l = [], n = [], h = [], k = [], c = d[2], e = d[3], d = d[4], b.nfc_product.defaultComments.push({
             nick: c,
@@ -2921,7 +2934,7 @@
         return !0
     };
     b.nfc_product.checkTimes = 0;
-    b.nfc_configModule.getRecommendExecute = function(a, c) {
+   /* b.nfc_configModule.getRecommendExecute = function(a, c) {
         var d = function() {
             b.thisExplorer.runtime.sendMessage({
                 getRecommendProducts: b.nfc_config.settings.productRecommendUrl,
@@ -2946,7 +2959,7 @@
             var e = $("#J_PromoPriceNum").html();
             20 < b.nfc_product.checkTimes || e && 1 < e.length ? (e && 1 < e.length && (reg = /[\d.]+/i, matches = reg.exec(e)) && (price = parseFloat(matches[0]), b.nfc_product.price > price && 0 < price && (b.nfc_product.price = price)), d()) : (b.nfc_product.checkTimes++, setTimeout(nfc_configModule.getRecommendExecute(a, c), 100))
         }() : d()
-    };
+    };*/
     b.nfc_configModule.startFromHere = function(a) {
         F();
         if ("firefox" == b.nfc_config.settings.explorerType && 8 == b.nfc_product.websiteId) return !1;

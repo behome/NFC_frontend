@@ -19,7 +19,26 @@ window.thisExplorer.runtime.onMessage.addListener(function(request, sender, send
     }
     b.options = localStorage.options;
     sendResponse(b);*/
-    return !0;
+   
+    if(request.getData){
+         if (0 > request.url.indexOf("http"))
+            if (-1 < request.url.indexOf("//")) request.url = request.url.replace(/\/\//, "http://");
+            else return sendResponse(b), !0;
+        $.ajax({
+            dataType: "text",
+            url: request.url,
+            cache: !1,
+            success: function(a) {
+                b.returnedData = a ? a : "";
+                sendResponse(b)
+            },
+            error: function(a, c, e) {
+                b.returnedData = "";
+                sendResponse(b)
+            }
+        })
+    }
+     return !0;
 });
 
 
