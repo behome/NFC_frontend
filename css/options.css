@@ -37,6 +37,7 @@ body {
     text-decoration: none;
     font-family: "Microsoft Yahei","冬青黑体简体中文 w3","宋体";
     letter-spacing: 1px;
+    width: 300px;
 }
 
 #header .logo span {

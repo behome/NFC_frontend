@@ -14,7 +14,8 @@
 
 
 .nfc_left_item{
-    background-color: #f08080;
+   /* background-color: #f08080;*/
+   background-repeat: repeat-x;
     height: 49px;
     width: 140px;
 }
@@ -38,19 +39,19 @@
 }
 
 #nfc_headline{
-    margin-left: 10px;
+    margin-right: 20px;
 }
 
 #logo_href a{
     float: left;
+    margin-left: 20px;
 }
 
 #nfc_headline{
     float: left;
     font-size: 15px;
     font-weight: bold;
-    color: #fff;
-    background-color: #f22e00;
+    color: #f22e00;
     font-family: "微软简粗黑"; 
 }
 
@@ -172,7 +173,6 @@
 }
 
 #nfc_logo {
-    background-position: -3px -2px;
     width: 44px;
     height: 44px;
     /*float:left;*/
