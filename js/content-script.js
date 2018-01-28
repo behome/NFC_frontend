@@ -67,13 +67,13 @@
                      "class":"nfc_left_item"
                  },
                     ["html:a", {
-                       
+        
                         href: "http://www.taobao.com",
                         target: "_blank"
                     },
                         ["html:div", {
-                            id: "nfc_logo",
-                            "class": "nfc_img"
+                            id: "nfc_logo"
+                            
                         }]
                     ],
                     ["html:div",{
@@ -87,9 +87,7 @@
                 
                 ["html:div", {
                     "class": " nfc_split"
-                    },["html:img",{
-                        src:b.thisExplorer.extension.getURL("../img/split.png")
-                    }]
+                    }
                 ],
                 ["html:div", {
                         id: "nfc_comments",
@@ -464,6 +462,8 @@
         0 < b.nfc_config.settings.debug && 0 < b.nfc_config.settings.detailReport && (c = ["html:span", {
             id: "nfc_sendReport"
         }, "发送检测报告"], document.getElementById("nfc_notice").appendChild(r(c, document, {})));
+        c = b.thisExplorer.extension.getURL("../img/logo3_5.png");
+        $("#nfc_logo").css("background-image", "url(" + c + ")");
         c = b.thisExplorer.extension.getURL("../img/imageSprite.gif");
         $(".nfc_img").css("background-image", "url(" + c + ")");
         c = b.thisExplorer.extension.getURL("../img/pyq1.png");
@@ -472,7 +472,8 @@
         $("#nfc_min").css("background-image","url(" + c + ")");
         c = b.thisExplorer.extension.getURL("../img/downArrow.png");
         $("#nfc_max").css("background-image","url(" + c + ")");
-
+          c = b.thisExplorer.extension.getURL("../img/bgImg.png");
+          $(".nfc_left_item").css("background-image", "url(" + c + ")");
        /* $(".nfc_footbar").css("background-image", "url(" + c + ")");*/
         c = b.thisExplorer.extension.getURL("../img/split.png");
         $(".nfc_split").css("background-image","url(" + c + ")");
