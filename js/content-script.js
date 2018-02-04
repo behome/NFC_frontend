@@ -587,7 +587,7 @@
         $("#nfc_app").mouseout(function() {
             $("#nfc_appArea").hide();
             $("#nfc_app .nfc_arrowCover").hide()
-        });*/
+       /* });
         $(".nfc_search").mouseover(function() {
             $("#nfc_searchItemIntro").hide();
             $("#nfc_searchItemIntro .nfc_arrowCover").hide()
@@ -603,7 +603,7 @@
         $("#nfc_advertClose").click(function() {
             $("#nfc_advertise").hide();
             localStorage.advertShowDate = l
-        });
+        });*/
         $("#nfc_sincereTag").click(function() {
             $("#nfc_sincereCom").show();
             $("#nfc_sosoCom").hide();
@@ -956,7 +956,7 @@
         }, 6E3));
         return !0
     }
-
+    //推荐
     function y() {
         if (2 < b.nfc_product.websiteId) return !0;
         var a = $("#nfc_recommend").offset(),
@@ -1000,7 +1000,7 @@
             }
             0 >= b.nfc_product[c + "CommentNum"] && ($("#nfc_" + c + "Com").html(""), 0 >= b.nfc_product[c + "Comments"].length && ($("#nfc_" + c + "Com").append($("<p>", {
                 text: "暂时没有找到" + d + "。"
-            })), b.nfc_status.extension.preRead || $("#nfc_" + c + "Com").append($("<p>", {
+            })), b.nfc_status.extension.preRead||alert("请开启") || $("#nfc_" + c + "Com").append($("<p>", {
                 text: "说明：" + b.nfc_product.websiteName + "的预读评论功能尚未开启，如要开启请"
             }).append($("<a>", {
                 href: b.nfc_status.extension.baseURL + "options.html#commentPreRead",
@@ -1262,11 +1262,9 @@
         if (0 <= a.indexOf("taobao.com")) b.nfc_product.websiteId = 1, b.nfc_product.websiteName = "淘宝",b.nfc_product.webOptionsName = "taobao", G();
         else if (0 <= a.indexOf("tmall.com") || 0 <= a.indexOf("tmall.hk") || 0 <= a.indexOf("yao.95095.com") || 0 <= a.indexOf("liangxinyao.com")) b.nfc_product.websiteId = 2, b.nfc_product.websiteName = "天猫",b.nfc_product.webOptionsName = "tmall", H();
         else if (0 <= a.indexOf("jd.com")) b.nfc_product.websiteId = 3, b.nfc_product.websiteName = "京东",b.nfc_product.webOptionsName = "jd", I();
-        else if (0 <= a.indexOf("yhd.com")) {
-            if (b.nfc_product.websiteId = 4, b.nfc_product.webOptionsName = "No1",b.nfc_product.websiteName = "1号店", b.nfc_product.name = $("h1").text(), a = /(\d+).html/i.exec(window.location.href)) b.nfc_product.itemId = a[1]
-        } else if (0 <= a.indexOf("dangdang.com")) b.nfc_product.websiteId = 5, b.nfc_product.websiteName = "当当",b.nfc_product.webOptionsName = "dd", J();
+        else if (0 <= a.indexOf("dangdang.com")) b.nfc_product.websiteId = 4, b.nfc_product.websiteName = "当当",b.nfc_product.webOptionsName = "dd", J();
         else if (0 <= a.indexOf("amazon.cn")) {
-            b.nfc_product.websiteId = 6;
+            b.nfc_product.websiteId = 5;
             b.nfc_product.websiteName = "亚马逊";
             b.nfc_product.webOptionsName = "amazon";
             a = $("#productTitle").text();
@@ -1279,7 +1277,7 @@
             a = /[\d.]+/i;
             if (a = a.exec(c)) b.nfc_product.price = parseFloat(a[0])
         } else if (0 <= a.indexOf("gome.com")) {
-            b.nfc_product.websiteId = 7;
+            b.nfc_product.websiteId = 6;
             b.nfc_product.websiteName = "国美在线";
             b.nfc_product.webOptionsName = "gome";
             b.nfc_product.name = $("h1").text();
@@ -1290,7 +1288,7 @@
             a = /[\d.]+/i;
             if (a = a.exec(c)) b.nfc_product.price = parseFloat(a[0])
         } else if (0 <= a.indexOf("suning")) {
-            b.nfc_product.websiteId = 8;
+            b.nfc_product.websiteId = 7;
             b.nfc_product.websiteName = "苏宁易购";
             b.nfc_product.webOptionsName = "suning";
             var a = $("h1").html(),
@@ -1385,7 +1383,7 @@
         });
         return !0
     }
-
+    //对于淘宝网评论提前获取后进行的解析存储
     function C(a) {
         b.nfc_product.defaultComments || (b.nfc_product.defaultComments = []);
         var c = {}, d, e, l, n, h, k, f, q, m, g, w, r;
@@ -1437,7 +1435,7 @@
         }
         return a.length
     }
-
+    //对于天猫评论提前获取后进行的解析存储
     function K(a) {
         b.nfc_product.defaultComments || (b.nfc_product.defaultComments = []);
         var c = {}, d, e, l, n, h, k, f, q, m, g, r, t;
@@ -1488,7 +1486,7 @@
         }
         return a.length
     }
-
+    //对于京东商城评论提前获取后进行的解析存储
     function L(a) {
         b.nfc_product.defaultComments || (b.nfc_product.defaultComments = []);
         var c = {}, d, e, l, n, h, k, f, q;
@@ -1531,53 +1529,8 @@
         }
         return a.length
     }
-
-    function M(a) {
-        var c, d, e, l, n, h, k;
-        b.nfc_product.defaultComments || (b.nfc_product.defaultComments = []);
-        n = {};
-        if (0 >= a.length) return 0;
-        try {
-            n = JSON.parse(a)
-        } catch (r) {
-            return 0
-        }
-        for (var f = n.value.replace(/>\s+</g, "><"), q = /<div class=\\"item good-comment\\"[\s\S]*?class=\\"user_info\\"[\s\S]*?class=\\"replyBtn_con[\s\S]*?<\/ul>[\s\S]*?<\/div>/ig, m, g, t = 0; null !== (c = q.exec(f));) {
-            t++;
-            a = [];
-            n = [];
-            h = [];
-            k = [];
-            e = c[0];
-            m = /userName=\\"([^\"]*?)\\"/i;
-            c = (contents = m.exec(e)) ? contents[1] : "";
-            m = /<i class=\\"vip_icon ([^\"]+)\\">/;
-            d = (contents = m.exec(e)) ? b.nfc_status.extension.baseURL + "images/yhd_" + contents[1] + ".gif" : "";
-            m = /<span class=\\"star s(\d)\\">/;
-            contents = m.exec(e);
-            m = /<span class=\\"date\\">.*?([\d\s:-]+)<\/span>/;
-            l = (contents = m.exec(e)) ? contents[1] : "";
-            for (m = /data-tpc=\\"SHINE\\"[\s\S]*?src=\\"([^\"]*)\\"/ig; null !== (contents = m.exec(e));) n.push(contents[1]), g = contents[1].replace(/_40x40/, "_400x300"), a.push(g);
-            m = /<span class=\\"text\\">([\s\S]*?)<div/i;
-            e = (contents = m.exec(e)) ? contents[1].replace(/(<[^>]+>)|(\\[rtn])|(\s+)/g, "") : "";
-            b.nfc_product.defaultComments.push({
-                nick: c,
-                displayRatePic: d,
-                auctionSku: "",
-                firstComment: e,
-                appendComment: "",
-                reply: "",
-                firstCmtDate: l,
-                appendDays: 0,
-                firstPicNails: n,
-                firstPics: a,
-                appendPicNails: k,
-                appendPics: h
-            })
-        }
-        return t
-    }
-
+    
+    //对于当当网评论提前获取后进行的解析存储
     function N(a) {
         var c, d, e, l, n, h, k, f;
         b.nfc_product.defaultComments || (b.nfc_product.defaultComments = []);
@@ -1620,7 +1573,7 @@
         }
         return t
     }
-
+    //对于国美评论提前获取后进行的解析存储
     function O(a) {
         var c, d, e, l, n, h, k, f, q;
         b.nfc_product.defaultComments || (b.nfc_product.defaultComments = []);
@@ -1665,7 +1618,7 @@
         }
         return a.length
     }
-
+    //对于苏宁评论提前获取后进行的解析存储
     function P(a) {
         var c, d, e, l, n, h, k;
         b.nfc_product.defaultComments || (b.nfc_product.defaultComments = []);
@@ -1710,7 +1663,7 @@
     }
     //提前获取各大网站评论数据
     function Q() {
-        if (!b.nfc_config.settings.commentWords || void 0 === b.nfc_config.settings.commentWords.neg) return !0;
+        /*if (!b.nfc_config.settings.commentWords || void 0 === b.nfc_config.settings.commentWords.neg) return !0;*/
         switch (b.nfc_product.websiteId) {
             case 1:
                 b.nfc_configModule.getCommentData_taobao(1);
@@ -1722,18 +1675,16 @@
                 b.nfc_configModule.getCommentData_jd(1);
                 break;
             case 4:
-                b.nfc_configModule.getCommentData_yhd(1);
-                break;
-            case 5:
                 b.nfc_configModule.getCommentData_dangdang(1);
                 break;
-            case 6:
+            case 5:
                 b.nfc_configModule.getCommentData_amazon(1);
                 break;
-            case 7:
+            case 6:
                 b.nfc_configModule.getCommentData_guomei(1);
+                console.log("bsfbfi");
                 break;
-            case 8:
+            case 7:
                 b.nfc_configModule.getCommentData_suning(1);
                 break;
             default:
@@ -1792,6 +1743,9 @@
         //var a = b.nfc_configModule.getSearchClass(b.nfc_product.name);
         b.nfc_product.classId = 1;
         b.nfc_configModule.isPreRead();
+        console.log(b.nfc_status.extension.preRead);
+        console.log(b.nfc_product.websiteId);
+        console.log(b.nfc_product.itemId);
         switch (b.nfc_product.websiteId) {
             case 1:
                 S();
@@ -1803,19 +1757,17 @@
                 U();
                 break;
             case 4:
-                V();
-                break;
-            case 5:
                 W();
                 break;
-            case 7:
+            case 6:
                 X();
                 break;
-            case 8:
+            case 7:
                 Y()
         }
         if (b.nfc_status.extension.preRead) Q();
         else if (0 == b.nfc_product.sincereComments.length + b.nfc_product.sosoComments.length + b.nfc_product.badComments.length + b.nfc_product.normalComments.length + b.nfc_product.doubtComments.length)
+            console.log("hxchu");
             for (var c = 1; 5 >= c; c++) {
                 switch (c) {
                     case 1:
@@ -1857,13 +1809,13 @@
             0 >= b.result.length || (b = JSON.parse(b.result), 0 < b.fake && A(b))
         }), !0;
         //var c = parseInt(nfc_configModule.getPreferOrder(1)),//原来是a.classId
-         c= 2;
+        /* c= 2;
             d = "";
         switch (c) {
             case 1:
                 d = 0;
-                243 == 1 /*原来是a.classId
-                */ ? d = 1 : 242 == a.classId && /(\u8f85\u98df|\u8425\u517b|\u8c03\u5473|\u5976\u7c89|\u6eb6\u8c46|\u8089\u80a0|\u5976\u7247|\u76ca\u751f\u83cc|\u9499\u94c1\u950c|DHA|\u725b\u521d\u4e73)/g.test(a.word) && (d = 1);
+                243 == 1 原来是a.classId
+                ? d = 1 : 242 == a.classId && /(\u8f85\u98df|\u8425\u517b|\u8c03\u5473|\u5976\u7c89|\u6eb6\u8c46|\u8089\u80a0|\u5976\u7247|\u76ca\u751f\u83cc|\u9499\u94c1\u950c|DHA|\u725b\u521d\u4e73)/g.test(a.word) && (d = 1);
                 d = d ? "（最好吃）" : "（最好看）";
                 break;
             case 2:
@@ -1927,7 +1879,7 @@
                 d = "（评分最高）"
         }
         $("#nfc_shopSort").text(d);
-        0 < c && $(".nfc_searchDes option").eq(c + 2).attr("selected", "selected");
+        0 < c && $(".nfc_searchDes option").eq(c + 2).attr("selected", "selected");*/
        // b.nfc_configModule.getRecommendExecute(a.word, c)
     }
     //根据分析结果选择要显示的句子
@@ -2032,8 +1984,10 @@
                     appendPics: a.appendPics
                 }))
             });
+            console.log("jfwef");
             0 == b.nfc_status.extension.preRead && (b.nfc_product.defaultCommentNum = 0);
             //分析评论
+            console.log("fsef");
             b.nfc_configModule.analyzeCommentData();
             e();
             t();
@@ -2366,7 +2320,7 @@
         })
     }
     //一号店
-    function V() {
+   /* function V() {
         b.nfc_product.repeatCounter = 0;
         (new Date).getFullYear();
         var a = "";
@@ -2473,7 +2427,7 @@
         $("#buyer_experience").delegate("li", "click", function() {
             setTimeout(nfc_configModule.findCommentArea, 1E3)
         })
-    }
+    }*/
     //当当网
     function W() {
         b.nfc_product.repeatCounter = 0;
@@ -2784,7 +2738,7 @@
             setTimeout(nfc_configModule.findCommentArea, 1E3)
         })
     }
-    //亚马逊，情况特殊
+    //亚马逊，情况特殊，提前获取的评论进行的分析
     function Z(a) {
         for (var c, d, e, l, n, h, k, f = /class=\"a-section review\"[\s\S]*?class=\"a-icon-alt\">([\d.]+) \u9897\u661f[\s\S]*?\u7559\u8a00\u8005[\s\S]*?author\"[\s\S]*?\">([\s\S]*?)<\/a>[\s\S]*?review-date\">\u4e8e ([\s\S]*?)<\/span>[\s\S]*?review-text\">([\s\S]*?)<\/span>/ig, q = 0; null !== (d = f.exec(a));) q++, l = [], n = [], h = [], k = [], c = d[2], e = d[3], d = d[4], b.nfc_product.defaultComments.push({
             nick: c,
@@ -2843,7 +2797,7 @@
         a || (a = 1);
         b.thisExplorer.runtime.sendMessage({
             getData: 1,
-            url: "https://s.club.jd.com/productpage/p-" + b.nfc_product.itemId + "-s-0-t-3-p-" + a + ".html"
+            url: "https://sclub.jd.com/comment/productPageComments.action?callback=fetchJSON_comment98vv67768&productId="+b.nfc_product.itemId+"&score=0&sortType=5&page="+(a-1)+"&pageSize=10&isShadowSku=0&fold=1"
         }, function(d) {
             d = d.returnedData;
             0 < d.length && (c = L(d), b.nfc_configModule.analyzeCommentData(), t(), 20 >= a && 50 > b.nfc_product.defaultCommentNum && 0 < c ? setTimeout(function() {
@@ -2852,7 +2806,7 @@
         });
         return !0
     };
-    b.nfc_configModule.getCommentData_yhd = function(a) {
+/*    b.nfc_configModule.getCommentData_yhd = function(a) {
         var c, d;
         if (!b.nfc_product.itemId || !b.nfc_product.productId) return !1;
         1 == a ? d = "http://e.yhd.com/front-pe/productExperience/proExperienceAction!ajaxView_pe.do?product.id=" + b.nfc_product.productId + "&merchantId=" + $("#merchantId").val() + "&filter.orderType=newest&pagenationVO.rownumperpage=10&currSiteId=1&f=1&currSiteType=1&isBestCity=0&isFresh=0" : (d = new Date, d = d.format("D n d hh:mm:ss") + " UTC+0800 " + d.getFullYear(), d = d.replace(/\s/g, "%20"), d = "http://e.yhd.com/front-pe/productExperience/proExperienceAction!ajaxView_pe.do" + ("?product.id=" + b.nfc_product.productId + "&merchantId=" + $("#merchantId").val() + "&filter.orderType=newest&pagenationVO.currentPage=" + a + "&pagenationVO.preCurrentPage=" + (1 == a ? "undefined" : a - 1) + "&pagenationVO.rownumperpage=10&currSiteId=1&currSiteType=1&filter.commentFlag=&filter.sortFlag=&tt=" + d + "&isBestCity=0&isFresh=0"));
@@ -2861,12 +2815,14 @@
             url: d
         }, function(d) {
             d = d.returnedData;
+            console.log("In yhd");
+            console.log(d);
             0 < d.length && (c = M(d), b.nfc_configModule.analyzeCommentData(), t(), 20 >= a && 50 > b.nfc_product.defaultCommentNum && 0 < c ? setTimeout(function() {
                 nfc_configModule.getCommentData_yhd(++a)
             }, 2E3) : (b.nfc_product.defaultCommentNum = 0, b.nfc_configModule.analyzeCommentData(), b.nfc_product.sincereCommentNum = 0, b.nfc_product.sosoCommentNum = 0, b.nfc_product.badCommentNum = 0, b.nfc_product.normalCommentNum = 0, b.nfc_product.doubtCommentNum = 0, t()), u())
         });
         return !0
-    };
+    };*/
     b.nfc_configModule.getCommentData_dangdang = function(a) {
         var c;
         if (!b.nfc_product.itemId) return !1;
@@ -2896,6 +2852,7 @@
         return !0
     };
     b.nfc_configModule.getCommentData_guomei = function(a) {
+        console.log(b.nfc_product.itemId);
         if (!b.nfc_product.itemId) return !1;
         b.thisExplorer.runtime.sendMessage({
             getData: 1,

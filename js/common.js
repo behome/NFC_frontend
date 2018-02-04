@@ -10,7 +10,6 @@
     e.nfc_config.options.taobao = 2;
     e.nfc_config.options.tmall = 2;
     e.nfc_config.options.jd = 2;
-    e.nfc_config.options.No1 = 2;
     e.nfc_config.options.dd = 1;
     e.nfc_config.options.amazon = 1;
     e.nfc_config.options.gome = 1;
