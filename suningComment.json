@@ -1,0 +1,631 @@
+reviewList({
+    "commodityReviews": [{
+        "bestTag": 0,
+        "commodityReviewId": 184174592,
+        "content": "做面条快，榨汁好麻烦。",
+        "publishTime": "2017-12-20 17:56:17",
+        "deviceType": 5,
+        "sourceSystem": "android",
+        "anonFlag": true,
+        "userInfo": {
+            "nickName": "135*****68",
+            "levelId": "161000000140",
+            "levelName": "V4",
+            "imgUrl": "//image.suning.cn/uimg/cmf/cust_headpic/0000000000_27_60x60.jpg",
+            "isVip": false
+        },
+        "qualityStar": 5,
+        "bestFlag": false,
+        "shopInfo": {
+            "shopId": "0000000000",
+            "shopName": "苏宁自营",
+            "shopType": "1"
+        },
+        "picVideoFlag": true,
+        "contentLength": 11,
+        "picVideInfo": {
+            "imgCount": 3,
+            "imageInfo": [{
+                "imgSeq": 1,
+                "url": "//image.suning.cn/uimg/ZR/share_order/151376367554210173",
+                "coverFlag": true,
+                "ordershowId": 22278494
+            }, {
+                "imgSeq": 2,
+                "url": "//image.suning.cn/uimg/ZR/share_order/151376367598035488",
+                "coverFlag": false,
+                "ordershowId": 22278494
+            }, {
+                "imgSeq": 3,
+                "url": "//image.suning.cn/uimg/ZR/share_order/151376375900817144",
+                "coverFlag": false,
+                "ordershowId": 22278494
+            }]
+        },
+        "commodityInfo": {
+            "commodityCode": "000000000600700548",
+            "commodityName": "九阳（Joyoung） 面条机JYN-W6 全自动出面 一机两用 可榨汁 饺子皮功能 果汁机 面条机 和面机",
+            "charaterId1": "颜色",
+            "charaterDesc1": "榨汁面条合一",
+            "charaterId2": "",
+            "charaterDesc2": ""
+        },
+        "againFlag": false,
+        "individualObject": [],
+        "labelNames": [{
+            "labelId": 25,
+            "labelName": "外观漂亮"
+        }],
+        "score": 0.0,
+        "usefulCnt": 0,
+        "replyFlag": false,
+        "isShowReviewDetail": true,
+        "styleId": "",
+        "groupId": "30084751",
+        "againReviewImgFlag": false,
+        "voiceFlag": false,
+        "smallVideoFlag": false,
+        "returnCode": "1",
+        "returnMsg": ""
+    }, {
+        "bestTag": 0,
+        "commodityReviewId": 177642829,
+        "content": "太棒了！",
+        "publishTime": "2017-11-15 10:02:19",
+        "deviceType": 5,
+        "sourceSystem": "android",
+        "anonFlag": true,
+        "userInfo": {
+            "nickName": "昊***力",
+            "levelId": "161000000110",
+            "levelName": "V1",
+            "imgUrl": "//image.suning.cn/uimg/cmf/cust_headpic/0000000000_33_60x60.jpg",
+            "isVip": false
+        },
+        "qualityStar": 5,
+        "bestFlag": false,
+        "shopInfo": {
+            "shopId": "0000000000",
+            "shopName": "苏宁自营",
+            "shopType": "1"
+        },
+        "picVideoFlag": true,
+        "contentLength": 4,
+        "picVideInfo": {
+            "imgCount": 2,
+            "imageInfo": [{
+                "imgSeq": 1,
+                "url": "//image.suning.cn/uimg/ZR/share_order/151071131337101413",
+                "coverFlag": true,
+                "ordershowId": 20388100
+            }, {
+                "imgSeq": 2,
+                "url": "//image.suning.cn/uimg/ZR/share_order/151071132814155842",
+                "coverFlag": false,
+                "ordershowId": 20388100
+            }]
+        },
+        "commodityInfo": {
+            "commodityCode": "000000000600700548",
+            "commodityName": "九阳（Joyoung） 面条机JYN-W6 全自动出面 一机两用 可榨汁 饺子皮功能 果汁机 面条机 和面机",
+            "charaterId1": "颜色",
+            "charaterDesc1": "榨汁面条合一",
+            "charaterId2": "",
+            "charaterDesc2": ""
+        },
+        "againFlag": false,
+        "individualObject": [],
+        "labelNames": [],
+        "score": 0.0,
+        "usefulCnt": 0,
+        "replyFlag": false,
+        "isShowReviewDetail": true,
+        "styleId": "",
+        "groupId": "30084751",
+        "againReviewImgFlag": false,
+        "voiceFlag": false,
+        "smallVideoFlag": false,
+        "returnCode": "1",
+        "returnMsg": ""
+    }, {
+        "bestTag": 0,
+        "commodityReviewId": 188553016,
+        "content": "挺满意的一次购物，物有所值",
+        "publishTime": "2018-01-18 14:33:49",
+        "deviceType": 5,
+        "sourceSystem": "android",
+        "anonFlag": true,
+        "userInfo": {
+            "nickName": "乾***7",
+            "levelId": "161000000130",
+            "levelName": "V3",
+            "imgUrl": "//image.suning.cn/uimg/cmf/cust_headpic/0000000000_28_60x60.jpg",
+            "isVip": false
+        },
+        "qualityStar": 5,
+        "bestFlag": false,
+        "shopInfo": {
+            "shopId": "0000000000",
+            "shopName": "苏宁自营",
+            "shopType": "1"
+        },
+        "picVideoFlag": false,
+        "contentLength": 13,
+        "commodityInfo": {
+            "commodityCode": "000000000600700548",
+            "commodityName": "九阳（Joyoung） 面条机JYN-W6 全自动出面 一机两用 可榨汁 饺子皮功能 果汁机 面条机 和面机",
+            "charaterId1": "颜色",
+            "charaterDesc1": "榨汁面条合一",
+            "charaterId2": "",
+            "charaterDesc2": ""
+        },
+        "againFlag": false,
+        "individualObject": [],
+        "labelNames": [{
+            "labelId": 1570,
+            "labelName": "搅拌很不错"
+        }, {
+            "labelId": 189,
+            "labelName": "产品不错"
+        }, {
+            "labelId": 932,
+            "labelName": "食品级材质"
+        }, {
+            "labelId": 43,
+            "labelName": "性价比高 "
+        }],
+        "score": 0.0,
+        "usefulCnt": 0,
+        "replyFlag": false,
+        "isShowReviewDetail": false,
+        "styleId": "",
+        "groupId": "30084751",
+        "againReviewImgFlag": false,
+        "voiceFlag": false,
+        "smallVideoFlag": false,
+        "returnCode": "1",
+        "returnMsg": ""
+    }, {
+        "bestTag": 0,
+        "commodityReviewId": 170425635,
+        "content": "东西收到了，卖家发货速度很快。好评，很满意。质量很好，很漂亮，物流也快,和卖家描述的一样好，性价比很高。老公研究了好久才整明白。",
+        "publishTime": "2017-09-28 08:46:27",
+        "deviceType": 1,
+        "sourceSystem": "PC评价",
+        "anonFlag": true,
+        "userInfo": {
+            "nickName": "",
+            "levelId": "161000000140",
+            "levelName": "V4",
+            "imgUrl": "//image.suning.cn/uimg/cmf/cust_headpic/0000000000_28_60x60.jpg",
+            "isVip": false
+        },
+        "qualityStar": 5,
+        "bestFlag": false,
+        "shopInfo": {
+            "shopId": "0000000000",
+            "shopName": "苏宁自营",
+            "shopType": "1"
+        },
+        "picVideoFlag": true,
+        "contentLength": 64,
+        "picVideInfo": {
+            "imgCount": 3,
+            "imageInfo": [{
+                "imgSeq": 1,
+                "url": "//image.suning.cn/uimg/ZR/share_order/150655955883644005",
+                "coverFlag": true,
+                "ordershowId": 18514829
+            }, {
+                "imgSeq": 2,
+                "url": "//image.suning.cn/uimg/ZR/share_order/150655955926966449",
+                "coverFlag": false,
+                "ordershowId": 18514829
+            }, {
+                "imgSeq": 3,
+                "url": "//image.suning.cn/uimg/ZR/share_order/150655955949021234",
+                "coverFlag": false,
+                "ordershowId": 18514829
+            }]
+        },
+        "commodityInfo": {
+            "commodityCode": "000000000600700548",
+            "commodityName": "九阳（Joyoung） 面条机JYN-W6 全自动出面 一机两用 可榨汁 饺子皮功能 果汁机 面条机 和面机",
+            "charaterId1": "颜色",
+            "charaterDesc1": "榨汁面条合一",
+            "charaterId2": "",
+            "charaterDesc2": ""
+        },
+        "againFlag": false,
+        "individualObject": [],
+        "labelNames": [{
+            "labelId": 932,
+            "labelName": "食品级材质"
+        }],
+        "score": 0.0,
+        "usefulCnt": 0,
+        "replyFlag": false,
+        "isShowReviewDetail": true,
+        "styleId": "",
+        "groupId": "30084751",
+        "againReviewImgFlag": false,
+        "voiceFlag": false,
+        "reviewSkin": {
+            "skinId": 20,
+            "skinName": "苏宁足球",
+            "isNew": "1",
+            "status": 1,
+            "bgcolor": "#f3fff6",
+            "skinCode": "00020",
+            "selectIconId": "//image.suning.cn/uimg/review/activity/146238608741142059.jpg",
+            "rightIconId": "//image.suning.cn/uimg/review/activity/146238608739392000.jpg",
+            "reviewAllIconId": "//image.suning.cn/uimg/review/activity/146238608733723546.jpg",
+            "reviewTileIconId": "//image.suning.cn/uimg/review/activity/146238608733723546.jpg",
+            "detailAllIconId": "//image.suning.cn/uimg/review/activity/146238608742326459.jpg",
+            "detailTileIconId": "//image.suning.cn/uimg/review/activity/146238608744539988.jpg",
+            "redetailAllIconId": "//image.suning.cn/uimg/review/activity/146238608748640662.jpg",
+            "redetailTileIconId": "//image.suning.cn/uimg/review/activity/146238608751142856.jpg",
+            "reviewAllIconId2": "//image.suning.cn/uimg/review/activity/146238608735183557.jpg",
+            "reviewTileIconId2": "//image.suning.cn/uimg/review/activity/146238608737954477.jpg",
+            "detailAllIconId2": "//image.suning.cn/uimg/review/activity/146238608743309132.jpg",
+            "detailTileIconId2": "//image.suning.cn/uimg/review/activity/146238608745667648.jpg",
+            "redetailAllIconId2": "//image.suning.cn/uimg/review/activity/146238608749918422.jpg",
+            "redetailTileIconId2": "//image.suning.cn/uimg/review/activity/146238608731673212.jpg",
+            "createTime": "2016-05-05 02:21:27.0",
+            "updateTime": "2016-05-05 02:21:27.0"
+        },
+        "smallVideoFlag": false,
+        "returnCode": "1",
+        "returnMsg": ""
+    }, {
+        "bestTag": 0,
+        "commodityReviewId": 180026698,
+        "content": "宝贝收到，迫不及待的感觉根据上面的说明配足面粉和水，面条也出来了。不错，如图所说方便快捷。给好评。",
+        "publishTime": "2017-11-28 05:15:17",
+        "deviceType": 5,
+        "sourceSystem": "android",
+        "anonFlag": true,
+        "userInfo": {
+            "nickName": "153*****97",
+            "levelId": "161000000110",
+            "levelName": "V1",
+            "imgUrl": "//image.suning.cn/uimg/cmf/cust_headpic/0000000000_24_60x60.jpg",
+            "isVip": false
+        },
+        "qualityStar": 5,
+        "bestFlag": false,
+        "shopInfo": {
+            "shopId": "0000000000",
+            "shopName": "苏宁自营",
+            "shopType": "1"
+        },
+        "picVideoFlag": false,
+        "contentLength": 49,
+        "commodityInfo": {
+            "commodityCode": "000000000600700548",
+            "commodityName": "九阳（Joyoung） 面条机JYN-W6 全自动出面 一机两用 可榨汁 饺子皮功能 果汁机 面条机 和面机",
+            "charaterId1": "颜色",
+            "charaterDesc1": "榨汁面条合一",
+            "charaterId2": "",
+            "charaterDesc2": ""
+        },
+        "againFlag": false,
+        "individualObject": [],
+        "labelNames": [{
+            "labelId": 43,
+            "labelName": "性价比高 "
+        }, {
+            "labelId": 25,
+            "labelName": "外观漂亮"
+        }, {
+            "labelId": 189,
+            "labelName": "产品不错"
+        }, {
+            "labelId": 174,
+            "labelName": "配件齐全"
+        }, {
+            "labelId": 170,
+            "labelName": "性价比一般"
+        }],
+        "score": 0.0,
+        "usefulCnt": 0,
+        "replyFlag": false,
+        "isShowReviewDetail": false,
+        "styleId": "",
+        "groupId": "30084751",
+        "againReviewImgFlag": false,
+        "voiceFlag": false,
+        "smallVideoFlag": false,
+        "returnCode": "1",
+        "returnMsg": ""
+    }, {
+        "bestTag": 0,
+        "commodityReviewId": 164960352,
+        "content": "很高大上的一款榨汁面条机，8/18活动购买，性价比超高，榨汁细腻，面条劲道。唯一不足，工作声音有点响。值得大家购买。给满分",
+        "publishTime": "2017-08-22 12:05:28",
+        "deviceType": 6,
+        "sourceSystem": "ios",
+        "anonFlag": false,
+        "userInfo": {
+            "nickName": "137*****18",
+            "levelId": "161000000120",
+            "levelName": "V2",
+            "imgUrl": "//image.suning.cn/uimg/cmf/cust_headpic/0000000000_29_60x60.jpg",
+            "isVip": false
+        },
+        "qualityStar": 5,
+        "bestFlag": false,
+        "shopInfo": {
+            "shopId": "0000000000",
+            "shopName": "苏宁自营",
+            "shopType": "1"
+        },
+        "picVideoFlag": true,
+        "contentLength": 61,
+        "picVideInfo": {
+            "imgCount": 3,
+            "imageInfo": [{
+                "imgSeq": 1,
+                "url": "//image.suning.cn/uimg/ZR/share_order/150337450882864685",
+                "coverFlag": true,
+                "ordershowId": 17094096
+            }, {
+                "imgSeq": 2,
+                "url": "//image.suning.cn/uimg/ZR/share_order/150337450911376617",
+                "coverFlag": false,
+                "ordershowId": 17094096
+            }, {
+                "imgSeq": 3,
+                "url": "//image.suning.cn/uimg/ZR/share_order/150337450943837016",
+                "coverFlag": false,
+                "ordershowId": 17094096
+            }]
+        },
+        "commodityInfo": {
+            "commodityCode": "000000000600700548",
+            "commodityName": "九阳（Joyoung） 面条机JYN-W6 全自动出面 一机两用 可榨汁 饺子皮功能 果汁机 面条机 和面机",
+            "charaterId1": "颜色",
+            "charaterDesc1": "榨汁面条合一",
+            "charaterId2": "",
+            "charaterDesc2": ""
+        },
+        "againFlag": false,
+        "individualObject": [],
+        "labelNames": [],
+        "score": 0.0,
+        "usefulCnt": 0,
+        "replyFlag": false,
+        "isShowReviewDetail": true,
+        "styleId": "",
+        "groupId": "30084751",
+        "againReviewImgFlag": false,
+        "voiceFlag": false,
+        "smallVideoFlag": false,
+        "returnCode": "1",
+        "returnMsg": ""
+    }, {
+        "bestTag": 0,
+        "commodityReviewId": 179701235,
+        "content": "很好。就是有点容易粘住。",
+        "publishTime": "2017-11-26 10:42:24",
+        "deviceType": 5,
+        "sourceSystem": "android",
+        "anonFlag": true,
+        "userInfo": {
+            "nickName": "188*****81",
+            "levelId": "161000000130",
+            "levelName": "V3",
+            "imgUrl": "//image.suning.cn/uimg/cmf/cust_headpic/0000000000_28_60x60.jpg",
+            "isVip": false
+        },
+        "qualityStar": 5,
+        "bestFlag": false,
+        "shopInfo": {
+            "shopId": "0000000000",
+            "shopName": "苏宁自营",
+            "shopType": "1"
+        },
+        "picVideoFlag": false,
+        "contentLength": 12,
+        "commodityInfo": {
+            "commodityCode": "000000000600700548",
+            "commodityName": "九阳（Joyoung） 面条机JYN-W6 全自动出面 一机两用 可榨汁 饺子皮功能 果汁机 面条机 和面机",
+            "charaterId1": "颜色",
+            "charaterDesc1": "榨汁面条合一",
+            "charaterId2": "",
+            "charaterDesc2": ""
+        },
+        "againFlag": false,
+        "individualObject": [],
+        "labelNames": [],
+        "score": 0.0,
+        "usefulCnt": 0,
+        "replyFlag": false,
+        "isShowReviewDetail": false,
+        "styleId": "",
+        "groupId": "30084751",
+        "againReviewImgFlag": false,
+        "voiceFlag": false,
+        "smallVideoFlag": false,
+        "returnCode": "1",
+        "returnMsg": ""
+    }, {
+        "bestTag": 0,
+        "commodityReviewId": 180303483,
+        "content": "晚上回去试试",
+        "publishTime": "2017-11-29 18:26:52",
+        "deviceType": 5,
+        "sourceSystem": "android",
+        "anonFlag": true,
+        "userInfo": {
+            "nickName": "小***i",
+            "levelId": "161000000110",
+            "levelName": "V1",
+            "imgUrl": "//image.suning.cn/uimg/cmf/cust_headpic/0000000000_26_60x60.jpg",
+            "isVip": false
+        },
+        "qualityStar": 5,
+        "bestFlag": false,
+        "shopInfo": {
+            "shopId": "0000000000",
+            "shopName": "苏宁自营",
+            "shopType": "1"
+        },
+        "picVideoFlag": false,
+        "contentLength": 6,
+        "commodityInfo": {
+            "commodityCode": "000000000600700548",
+            "commodityName": "九阳（Joyoung） 面条机JYN-W6 全自动出面 一机两用 可榨汁 饺子皮功能 果汁机 面条机 和面机",
+            "charaterId1": "颜色",
+            "charaterDesc1": "榨汁面条合一",
+            "charaterId2": "",
+            "charaterDesc2": ""
+        },
+        "againFlag": false,
+        "individualObject": [],
+        "labelNames": [{
+            "labelId": 812,
+            "labelName": "功能全面"
+        }],
+        "score": 0.0,
+        "usefulCnt": 0,
+        "replyFlag": false,
+        "isShowReviewDetail": false,
+        "styleId": "",
+        "groupId": "30084751",
+        "againReviewImgFlag": false,
+        "voiceFlag": false,
+        "smallVideoFlag": false,
+        "returnCode": "1",
+        "returnMsg": ""
+    }, {
+        "bestTag": 0,
+        "commodityReviewId": 177777615,
+        "content": "东西还是可以，还是不得回去，潮州，又慢慢修。",
+        "publishTime": "2017-11-15 20:28:18",
+        "deviceType": 5,
+        "sourceSystem": "android",
+        "anonFlag": true,
+        "userInfo": {
+            "nickName": "136*****66",
+            "levelId": "161000000120",
+            "levelName": "V2",
+            "imgUrl": "//image.suning.cn/uimg/cmf/cust_headpic/0000000000_28_60x60.jpg",
+            "isVip": false
+        },
+        "qualityStar": 5,
+        "bestFlag": false,
+        "shopInfo": {
+            "shopId": "0000000000",
+            "shopName": "苏宁自营",
+            "shopType": "1"
+        },
+        "picVideoFlag": false,
+        "contentLength": 22,
+        "commodityInfo": {
+            "commodityCode": "000000000600700548",
+            "commodityName": "九阳（Joyoung） 面条机JYN-W6 全自动出面 一机两用 可榨汁 饺子皮功能 果汁机 面条机 和面机",
+            "charaterId1": "颜色",
+            "charaterDesc1": "榨汁面条合一",
+            "charaterId2": "",
+            "charaterDesc2": ""
+        },
+        "againFlag": false,
+        "individualObject": [],
+        "labelNames": [],
+        "score": 0.0,
+        "usefulCnt": 0,
+        "replyFlag": false,
+        "isShowReviewDetail": false,
+        "styleId": "",
+        "groupId": "30084751",
+        "againReviewImgFlag": false,
+        "voiceFlag": true,
+        "reviewVoice": {
+            "reviewVoiceId": 30306,
+            "productReviewId": 177777615,
+            "voiceId": "151074889792788781",
+            "auditState": "0",
+            "createTime": "2017-11-15 20:28:18.0"
+        },
+        "smallVideoFlag": false,
+        "returnCode": "1",
+        "returnMsg": ""
+    }, {
+        "bestTag": 0,
+        "commodityReviewId": 159969655,
+        "content": "质量很好，收到立马忍不住，试用，这个天，榨个西瓜汁，爽，给宝宝做的鸡蛋面，吃饭停不下来，第一次水多些了，又适当加了点面，操作简单~",
+        "publishTime": "2017-07-25 13:06:34",
+        "deviceType": 5,
+        "sourceSystem": "android",
+        "anonFlag": true,
+        "userInfo": {
+            "nickName": "186*****25",
+            "levelId": "161000000110",
+            "levelName": "V1",
+            "imgUrl": "//image.suning.cn/uimg/cmf/cust_headpic/0000000000_30_60x60.jpg",
+            "isVip": false
+        },
+        "qualityStar": 5,
+        "bestFlag": false,
+        "shopInfo": {
+            "shopId": "0000000000",
+            "shopName": "苏宁自营",
+            "shopType": "1"
+        },
+        "picVideoFlag": true,
+        "contentLength": 65,
+        "picVideInfo": {
+            "imgCount": 3,
+            "imageInfo": [{
+                "imgSeq": 1,
+                "url": "//image.suning.cn/uimg/ZR/share_order/150095915725662277",
+                "coverFlag": true,
+                "ordershowId": 15748951
+            }, {
+                "imgSeq": 2,
+                "url": "//image.suning.cn/uimg/ZR/share_order/150095915792525173",
+                "coverFlag": false,
+                "ordershowId": 15748951
+            }, {
+                "imgSeq": 3,
+                "url": "//image.suning.cn/uimg/ZR/share_order/150095918399423361",
+                "coverFlag": false,
+                "ordershowId": 15748951
+            }]
+        },
+        "commodityInfo": {
+            "commodityCode": "000000000600700548",
+            "commodityName": "九阳(Joyoung)面条机JYN-W6家用全自动面条机 一机多能可榨汁五彩面带饺子皮功能",
+            "charaterId1": "颜色",
+            "charaterDesc1": "榨汁面条合一",
+            "charaterId2": "",
+            "charaterDesc2": ""
+        },
+        "againFlag": false,
+        "individualObject": [],
+        "labelNames": [{
+            "labelId": 812,
+            "labelName": "功能全面"
+        }, {
+            "labelId": 189,
+            "labelName": "产品不错"
+        }, {
+            "labelId": 25,
+            "labelName": "外观漂亮"
+        }],
+        "score": 0.0,
+        "usefulCnt": 0,
+        "replyFlag": false,
+        "isShowReviewDetail": true,
+        "styleId": "",
+        "groupId": "30084751",
+        "againReviewImgFlag": false,
+        "voiceFlag": false,
+        "smallVideoFlag": false,
+        "returnCode": "1",
+        "returnMsg": ""
+    }],
+    "returnCode": "1",
+    "returnMsg": "成功取得评价列表"
+})
