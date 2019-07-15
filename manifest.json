@@ -53,6 +53,8 @@
         "declarativeContent",
         "storage", // 插件本地存储
       // 可以通过executeScript或者insertCSS访问的网站
+        "http://47.93.243.101:80/infer/index/",
+        "http://47.93.243.101:80/infer/comAnaly/",
         "*://*.taobao.com/*","*://*.jd.com/*","*://*.yhd.com/*","*://*.dangdang.com/*","*://*.amazon.cn/*","*://*.gome.com.cn/*","*://*.suning.com/*","*://*.yao.95095.com/*","*://*.liangxinyao.com/*"
     ],
     // 普通页面能够直接访问的插件资源列表，如果不设置是无法直接访问的
